@@ -22,6 +22,57 @@ $(document).ready(function(){
         getLocation();
     });
 
+    /*
+    Click event listener for button # button-satellite-id
+    action is composed of the following steps: 
+    - get #satellite-id value from noradId
+    - 
+    */
+    $("#button-satellite-id").click(function() {
+        // get the value of the input box #satellite-id as a string
+        var noradId = $("#satellite-id").val();
+        // if the value is empty then display an error message
+        if (!noradId) {
+            $("#satellite-api-status").html(`<h2>Please enter a valid Norad ID</h2>`);
+            return;
+        }
+        // extract norad id from the string  by using regex
+        // we want the number contained in the squared paranthesis at the end of the string
+        // idea from https://javascript.info/regexp-groups
+        extractedNoradId = noradId.match(/\[(.*?)\]/)
+        if (extractedNoradId === null) {
+            // convert the string to a Number object.
+            // check if the respective Number object is an integer
+            // if it is not then display an error message
+            if (! Number.isInteger(Number(noradId))) {
+                $("#satellite-api-status").html(`<h2>Please enter a valid ID</h2>`);
+                return;
+            }
+        }
+        // extract the captured id in the [] from the string that comes from autocomplete list
+        else {
+            noradId = extractedNoradId[1]
+        }
+        
+        // variable for latitude
+        var lat = $("#satellite-lat").val();
+        if (!lat) {
+            $("#satellite-api-status").html(`<h2>Please enter a valid latitude</h2>`);
+            return;
+        }
+        //  variable for longitude
+        var lon = $("#satellite-lon").val();
+        if (!lon) {
+            $("#satellite-api-status").html(`<h2>Please enter a valid longitude</h2>`);
+            return;
+        }
+
+        $("#satellite-api-status").html(
+            // display an animated gif file to let the user know that the data is being accessed. // 
+            `<div id="loader">
+                <img src="assets/css/loader.gif" alt="loading..." />
+            </div>`);
+
         /*
         using Satellite Passes API
         this promise function retrieves data from an API endpoint
