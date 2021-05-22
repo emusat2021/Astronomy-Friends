@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    // call function from autocomplete.js for input with id #satellite-id.
+    // this will display suggestion when user starts typing in the inputbox
+    autocomplete(document.getElementById("satellite-id"));
         /*
         using Satellite Passes API
         this promise function retrieves data from an API endpoint
