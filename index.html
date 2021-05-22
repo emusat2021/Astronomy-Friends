@@ -27,25 +27,47 @@
     <div>
         MAP SATELLITES TRACKER
         <div class="objects">
+            Objects
             <ul>
-                <li id="25544">ISS</li>
-                <li>Hubble</li>
-                <li>Tianhe</li>
+                <li id="25544">International Space Station<a href="https://en.wikipedia.org/wiki/International_Space_Station" title=""> (read more)</a></li>
+                <li id="20580">Hubble Space Telescope<a href="https://en.wikipedia.org/wiki/Hubble_Space_Telescope" title="Hubble Space Telescope"> (read more)</a></li>
+                <li id="48274">Tianhe<a href="https://en.wikipedia.org/wiki/Tianhe_(space_station_module)" class="mw-redirect" title="Tianhe (space station module)"> (read more)</a></li>
             </ul>
         </div>
         <div class="satellite-id">
-            <input type="text" class="satellite-number" id="satellite-id" placeholder="Norad ID" required>
-            <button type="submit" class="btn btn-blue-secondary">
-                Search
+            Satellite-id
+            <br>
+            <!-- <input type="text" class="satellite-number" id="satellite-id" placeholder="Norad ID" required> -->
+            <!-- https://www.w3schools.com/howto/howto_js_autocomplete.asp -->
+
+            <!-- <form autocomplete="off" action="/action_page.php"> -->
+                <div class="autocomplete" style="width:300px;">
+                    <!-- <input id="myInput" type="text" name="myCountry" placeholder="Country"> -->
+                    <input type="text" name="satellite_id" class="satellite-number" id="satellite-id" placeholder="Satellite name or Norad ID" required>
+                </div>
+                <!-- <input type="submit"> -->
+            <!-- </form> -->
+            <br>
+            <input type="text" class="satellite-number" id="satellite-lat" placeholder="Latitude" value="0" required>
+            <br>
+            <input type="text" class="satellite-number" id="satellite-lon" placeholder="Longitude" value="0" required>
+            <br>
+            <span>
+            <button type="submit" class="btn btn-blue-secondary" id="button-satellite-id">
+                View
             </button>
-        </div>
-        <div class="satellite-name">
-            <input type="text" class="satellite-text-name" id="satellite-name" placeholder="Satellite name" required>
-            <button type="submit" class="btn btn-blue-secondary">
-                Search
+            <button type="reset" class="btn btn-blue-secondary" id="button-satellite-id-reset">
+                Reset
             </button>
-        </div>
-        <div id="map"></div>
+            <button type="submit" class="btn btn-blue-secondary" id="button-get-location">
+                Get my location
+            </button>
+            </span>
+
+            <div id="satellite-api-status"></div>
+            <div id="satellite-api-answer"></div>
+            <div id="countdown"></div>
+        <div id="map">MAP</div>
         <hr>
     </div>
     <!-- /MAP SATELLITES TRACKER -->
@@ -112,6 +134,7 @@
     <!-- Google maps API settings -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzHJe9BybHG8wTjPr278K9WvIiq-DP5Nc&callback=initMap">
     </script>
+    <script src="assets/js/maps.js "></script>
     <script src="assets/js/data.js"></script>
     
 </body>
