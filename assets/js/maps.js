@@ -18,3 +18,22 @@ function initMap() {
 
 
 }
+// Add marker on the map
+// update input boxes with coordinates
+function addMarker (location, map) {
+    if (!mainPosition) {
+        mainPosition = new google.maps.Marker({
+            position: location,
+            label: "Observer",
+            map: map,
+        });
+    }
+    else {
+        mainPosition.setPosition(location);
+    }
+    
+    console.log(location.toJSON());
+    // add lat and Lng to the input boxes:(id=satellite-lat and id=satellite-lon)
+    $("#satellite-lat").val(location.toJSON()["lat"]);
+    $("#satellite-lon").val(location.toJSON()["lng"])
+}
