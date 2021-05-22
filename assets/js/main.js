@@ -78,4 +78,57 @@ $(document).ready(function(){
             });
     });
 
+    /*
+    This function is a countdown timer.
+    It is used to display the remaining time until an object passes above user's coordinates.
+    The idea is taken from https://www.n2yo.com/js/passes.js (coundown) and modified accordingly
+    The function takes the following parameters:
+    - satelliteName: The name of the satellite (string);
+    - startPassMsec: The time (in miliseconds) when the satellite rises(integer);
+    - endPassMsec: The time (in miliseconds) when the satellite sets(integer);
+    */
+    function go(satelliteName, startPassMsec, endPassMsec)
+    {
+        // variables for time units
+        var hours, minutes, seconds;
+        
+        // get tag element
+        var countdown = document.getElementById("countdown");
+    
+        // update the tag with id "countdown" every 1 second
+        timer = setInterval(function () {
+        // find the amount of "seconds" between now and target
+        var nowMsec = new Date().getTime();
+        var seconds_left = (startPassMsec - nowMsec) / 1000;
+    
+        // do some time calculations
+        seconds_left = seconds_left % 86400;
+        
+        hours = parseInt(seconds_left / 3600);
+        seconds_left = seconds_left % 3600;
+        
+        minutes = parseInt(seconds_left / 60);
+        seconds = parseInt(seconds_left % 60);
+        
+        // format countdown string + set tag value
+        if(seconds_left>=0)
+        {
+            // This block is executed when the current time is before rise time
+            countdown.innerHTML = satelliteName + " will cross your sky in <br/>" + hours + "h " + minutes + "m " + seconds + "s";  
+        }
+        else if (nowMsec<endPassMsec)
+        {
+            // This block is executed when the current time is between rise time and set time
+            countdown.innerHTML = "<b><span style='color:red'>" + satelliteName + " is above the horizon now!</span></b>";
+        }
+        else
+        {
+            // This block is executed when the current time is after the set time
+            clearInterval(timer);
+            countdown.innerHTML = "Press View for the next pass of " + satelliteName;
+        }
+    
+    }, 1000);
+    return timer;
+    }
 });
