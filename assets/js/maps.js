@@ -37,3 +37,47 @@ function addMarker (location, map) {
     $("#satellite-lat").val(location.toJSON()["lat"]);
     $("#satellite-lon").val(location.toJSON()["lng"])
 }
+
+/*
+returns the latitude and longitude of the user's position
+https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+This function is called when the user clicks on "Get my location" button.
+It does the following:
+- retrieves user position
+- centers the map at the user's position
+- zooms the map by a factor of 13
+- marks the user position on the map with a marker
+- updates input boxes with user location
+*/
+function getLocation() {
+    function success(position) {
+
+        lat = position.coords.latitude;
+        lng = position.coords.longitude;
+        // center the map arround user location
+        map.setCenter({lat: lat, lng: lng})
+        map.setZoom(13)
+
+        // put a marker on the current location
+        mainPosition = new google.maps.Marker({
+            position: {
+                    lat: lat,
+                    lng: lng
+                },
+            label: "Observer",
+            map: map,
+        });
+        // update input boxes with user location
+        $("#satellite-lat").val(lat);
+        $("#satellite-lon").val(lng);
+    
+        console.log("Got coordinates " + lat + ", " + lng);
+    }
+    function error() {
+        console.log("Error on location");
+    }
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error);
+    } else {}    
+}
