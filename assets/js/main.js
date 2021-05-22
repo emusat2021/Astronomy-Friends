@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     // call function from autocomplete.js for input with id #satellite-id.
     // this will display suggestion when user starts typing in the inputbox
-    autocomplete(document.getElementById("satellite-id"));
+    autocomplete(document.getElementById("satellite-id"), satelliteList);
     noradIds = [25544, 20580, 48274]
     for (let i=0; i<noradIds.length; i++) {
         // Click event listener for ISS, Hubble, tianhe ID #25544, 20580, 48274
