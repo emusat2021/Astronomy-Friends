@@ -11,6 +11,17 @@ $(document).ready(function(){
             $("#satellite-id").val(`${noradIds[i]}`);
         });
     }
+    /*
+    Click event listener for button # button-get-location
+    action is composed of the following steps: 
+    - get location from browser
+    - center map on user location
+    - update coordinates in input boxes
+    */
+    $("#button-get-location").click(function() {
+        getLocation();
+    });
+
         /*
         using Satellite Passes API
         this promise function retrieves data from an API endpoint
