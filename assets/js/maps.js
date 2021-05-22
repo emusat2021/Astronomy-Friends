@@ -1,3 +1,5 @@
+let mainPosition = false;
+
 var map;
 function initMap() {
     // initialize global variable map with a new Map object
