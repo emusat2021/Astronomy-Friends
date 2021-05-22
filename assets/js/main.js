@@ -23,12 +23,12 @@ $(document).ready(function(){
     });
 
     /*
-    Click event listener for button # button-satellite-id
+    Click event listener for button # button-view
     action is composed of the following steps: 
     - get #satellite-id value from noradId
     - 
     */
-    $("#button-satellite-id").click(function() {
+    $("#button-view").click(function() {
         // get the value of the input box #satellite-id as a string
         var noradId = $("#satellite-id").val();
         // if the value is empty then display an error message
