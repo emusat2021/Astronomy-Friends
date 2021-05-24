@@ -57,15 +57,23 @@ function getLocation() {
         map.setCenter({lat: lat, lng: lng})
         map.setZoom(13)
 
-        // put a marker on the current location
-        mainPosition = new google.maps.Marker({
-            position: {
+        if (!mainPosition) {
+            // put a marker on the current location
+            mainPosition = new google.maps.Marker({
+                position: {
                     lat: lat,
                     lng: lng
                 },
             label: "Observer",
             map: map,
         });
+        }
+        else {
+            mainPosition.setPosition({
+                lat: lat,
+                lng: lng
+            });
+        }
         // update input boxes with user location
         $("#satellite-lat").val(lat);
         $("#satellite-lon").val(lng);
