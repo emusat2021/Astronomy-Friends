@@ -17,8 +17,6 @@ function initMap() {
     google.maps.event.addListener(map, "click", (event) => {
         addMarker(event.latLng, map);
     });
-
-
 }
 // Add marker on the map
 // update input boxes with coordinates
@@ -53,7 +51,6 @@ It does the following:
 */
 function getLocation() {
     function success(position) {
-
         lat = position.coords.latitude;
         lng = position.coords.longitude;
         // center the map arround user location
