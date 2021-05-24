@@ -119,9 +119,20 @@ $(document).ready(function(){
                     clearInterval(mainTimer)
                 }
                 // convert the rise time to a Date object
-                startPassMsec = Date.parse(firstResponse[0].rise.utc_datetime);
+                riseTime = firstResponse[0].rise.utc_datetime;
+                // convert date string to new Date object
+                // this is for browsers on mobile phones which cannot parse a date string correctly
+                // idea taken from https://stackoverflow.com/questions/5324178/javascript-date-parsing-on-iphone
+                riseTime = riseTime.split(".")[0];
+                riseTime = riseTime.split(/[- :]/);
+                startPassMsec = new Date(riseTime[0], riseTime[1]-1, riseTime[2], riseTime[3], riseTime[4], riseTime[5]);
                 // convert the set time to a Date object
-                endPassMsec = Date.parse(firstResponse[0].set.utc_datetime);
+                setTime = firstResponse[0].set.utc_datetime;
+                setTime = setTime.split(".")[0];
+                setTime = setTime.split(/[- :]/);
+                endPassMsec = new Date(setTime[0], setTime[1]-1, setTime[2], setTime[3], setTime[4], setTime[5]);
+                console.log(riseTime);
+                console.log(setTime);
                 console.log(startPassMsec);
                 console.log(endPassMsec);
                 // activate the countdown timer
