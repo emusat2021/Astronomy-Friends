@@ -149,6 +149,23 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
+- Browsers on mobile phones cannot parse Date strings correctly.
+Countdown is not working on mobile (see the image below) because the date string is not parsed and thus startPassMsec and endPassMsec variables from main.js -> function(firstResponse) become NaN.
+Therefore, the countdown value cannot be calculated.
+
+Test image desktop
+
+![Test image desktop](assets/images/readme/desktop-countdown-test.jpg).
+
+Test image mobile
+
+![Test image mobile](assets/images/readme/mobile-countdown-test.jpg).
+
+Solution to this bug:
+
+Use new Date() object instead of Date.parse().
+Idea taken from https://stackoverflow.com/questions/5324178/javascript-date-parsing-on-iphone.
+
 -   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
     -   A white gap can be seen to the right of the footer and navigation bar as a result.
 -   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
