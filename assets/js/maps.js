@@ -81,6 +81,7 @@ function getLocation() {
         console.log("Got coordinates " + lat + ", " + lng);
     }
     function error() {
+        $("#satellite-api-status").html(`<h2>Location access must be allowed!</h2>`);
         console.log("Error on location");
     }
 
