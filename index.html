@@ -41,13 +41,10 @@
             <!-- <input type="text" class="satellite-number" id="satellite-id" placeholder="Norad ID" required> -->
             <!-- https://www.w3schools.com/howto/howto_js_autocomplete.asp -->
 
-            <!-- <form autocomplete="off" action="/action_page.php"> -->
+            <form autocomplete="off" id="form1">
                 <div class="autocomplete" style="width:300px;">
-                    <!-- <input id="myInput" type="text" name="myCountry" placeholder="Country"> -->
                     <input type="text" name="satellite_id" class="satellite-number" id="satellite-id" placeholder="Satellite name or Norad ID" required>
                 </div>
-                <!-- <input type="submit"> -->
-            <!-- </form> -->
             <br>
             <input type="text" class="satellite-number" id="satellite-lat" placeholder="Latitude" value="0" required>
             <br>
@@ -60,11 +57,11 @@
             <button type="reset" class="btn btn-blue-secondary" id="button-reset">
                 Reset
             </button>
-            <button type="submit" class="btn btn-blue-secondary" id="button-get-location">
+            <button type="button" class="btn btn-blue-secondary" id="button-get-location">
                 Get my location
             </button>
             </span>
-
+            </form>
             <div id="satellite-api-status"></div>
             <div id="satellite-api-answer"></div>
             <div id="countdown"></div>

@@ -31,7 +31,8 @@ $(document).ready(function(){
     - get #satellite-id value from noradId
     - 
     */
-    $("#button-view").click(function() {
+    $("#form1").submit(function(event) {
+        event.preventDefault();
         // get the value of the input box #satellite-id as a string
         var noradId = $("#satellite-id").val();
         // if the value is empty then display an error message
