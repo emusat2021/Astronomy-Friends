@@ -76,3 +76,23 @@ ul#favobjects li:hover {
   background-color: #256d91;
   width: 20rem;
 }
+/*Back to top button. Idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css*/
+.btt-button {
+  position: fixed;
+  height: 2.6rem;
+  width: 2.6rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  border-radius: .4rem;
+  background-color: #fcfcfc;
+  display: none;
+  z-index: 999999999;
+}
+
+.btt-button:hover {
+  background-color: #ebebebfd;
+}
+
+.btt-link{
+  cursor: pointer;
+}
