@@ -63,3 +63,16 @@ ul#favobjects li:hover {
   cursor: pointer;
   font-weight: 900;
 }
+.nav-item a {
+  text-transform: uppercase;
+}
+.nav-link, .navbar-brand {
+  color: #fff !important;
+}
+.navbar-custom {
+  background-color: #256d91; 
+}
+.dropdown-menu-custom {
+  background-color: #256d91;
+  width: 20rem;
+}
