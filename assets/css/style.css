@@ -54,3 +54,12 @@ input[type=submit] {
   color: #ffffff;
 }
 /* end https://www.w3schools.com/howto/howto_js_autocomplete.asp */
+
+/* Map Satellites Tracker */
+ul#favobjects {
+  list-style: none;
+}
+ul#favobjects li:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
