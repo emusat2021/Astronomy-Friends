@@ -63,6 +63,10 @@ ul#favobjects li:hover {
   cursor: pointer;
   font-weight: 900;
 }
+/* images */
+
+/* navbar */
+
 .nav-item a {
   text-transform: uppercase;
 }
