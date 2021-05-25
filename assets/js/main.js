@@ -94,9 +94,9 @@ $(document).ready(function(){
 
         The API response is a list of objects. Each object contains information about: rise, culmination, set and visibility.
         */
-
+        apiUrl = `https://satellites.fly.dev/passes/${noradId}?lat=${lat}&lon=${lon}&limit=1`;
         $.when(
-            $.getJSON(`https://satellites.fly.dev/passes/${noradId}?lat=${lat}&lon=${lon}&limit=1`),
+            $.getJSON(apiUrl),
         ).then(
             function(firstResponse) {
                 // display status of the API call
