@@ -104,6 +104,12 @@ $(document).ready(function(){
                 // display the information from the first pass (rise, culmination, set, visibility)
                 $("#satellite-api-answer").html("");
                 console.log(firstResponse);
+                if (firstResponse.length == 0) {
+                    $("#satellite-api-answer").html("The chosen object does not pass above specified coordinates. Please choose another object or other coordinates.");
+                    clearInterval(mainTimer);
+                    $("#countdown").html("");
+                    return;
+                }
 
                 for (var i = 0; i < firstResponse.length; i++) {
                     // todo move the following lines to a separate function
