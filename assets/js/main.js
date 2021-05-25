@@ -181,7 +181,10 @@ $(document).ready(function(){
         // update the tag with id "countdown" every 1 second
         timer = setInterval(function () {
         // find the amount of "seconds" between now and target
-        var nowMsec = new Date().getTime();
+        var dateObj = new Date()
+        // get current time taking into account TimezoneOffset
+        // so that the time is UTC and not local time
+        var nowMsec = (dateObj.getTime() + dateObj.getTimezoneOffset()*60*1000)
         var seconds_left = (startPassMsec - nowMsec) / 1000;
     
         // do some time calculations
