@@ -96,3 +96,18 @@ ul#favobjects li:hover {
 .btt-link{
   cursor: pointer;
 }
+/* Night sky image section */
+/* idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css */
+
+.night-sky-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: url("../images/night-sky.jpg") no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 95vh;
+}
