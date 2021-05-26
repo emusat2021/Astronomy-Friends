@@ -13,7 +13,14 @@
  .heading1 {
   text-align: center;
  }
-
+ /* About and Beginner sections */
+ #section-about, #section-beginner {
+   margin-left: 2px;
+   margin-right: 2px;
+ }
+.about-image-people {
+  width: 60%;
+}
 /*--------------------------------------------Map*/
 div#map {
     min-height: 360px;
