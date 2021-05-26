@@ -6,12 +6,16 @@ $(document).ready(function(){
 
     mainTimer = null;
 
-    noradIds = [25544, 20580, 48274]
+    noradIds = [
+        {"name": "ISS (ZARYA) [25544]", "id": "25544"},
+        {"name": "HST [20580]", "id": "20580"},
+        {"name": "CSS (TIANHE-1) [48274]", "id": "48274"}
+    ]
     for (let i=0; i<noradIds.length; i++) {
         // Click event listener for ISS, Hubble, tianhe ID #25544, 20580, 48274
         // action is to fill in Input text having ids #satellite-id with 25544, 20580, 48274
-        $(`#${noradIds[i]}`).click(function() {
-            $("#satellite-id").val(`${noradIds[i]}`);
+        $(`#${noradIds[i]["id"]}`).click(function() {
+            $("#satellite-id").val(`${noradIds[i]["name"]}`);
         });
     }
     /*
