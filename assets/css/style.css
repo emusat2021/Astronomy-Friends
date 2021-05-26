@@ -33,7 +33,7 @@ html {
   letter-spacing: 2px;
  }
  /* About and Beginner sections */
- #section-about, #section-beginner {
+ #section-about, #section-beginner, .instructions {
    margin-left: 2px;
    margin-right: 2px;
  }
