@@ -12,6 +12,7 @@
  /* h1 style */
  .heading1 {
   text-align: center;
+  letter-spacing: 2px;
  }
  /* About and Beginner sections */
  #section-about, #section-beginner {
@@ -94,6 +95,7 @@ ul#favobjects li:hover {
 }
 .nav-link, .navbar-brand {
   color: #fff !important;
+  letter-spacing: 2px;
 }
 .navbar-toggler {
   background-color: #fff;
