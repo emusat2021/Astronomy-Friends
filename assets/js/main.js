@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    MAIN_DEBUG = false
 
     // call function from autocomplete.js for input with id #satellite-id.
     // this will display suggestion when user starts typing in the inputbox
@@ -107,7 +108,8 @@ $(document).ready(function(){
                 $("#satellite-api-status").html("Request successful.");
                 // display the information from the first pass (rise, culmination, set, visibility)
                 $("#satellite-api-answer").html("");
-                console.log(firstResponse);
+                if (MAIN_DEBUG)
+                    console.log(firstResponse);
                 if (firstResponse.length == 0) {
                     $("#satellite-api-answer").html("The chosen object does not pass above specified coordinates. Please choose another object or other coordinates.");
                     clearInterval(mainTimer);
@@ -117,7 +119,8 @@ $(document).ready(function(){
 
                 for (var i = 0; i < firstResponse.length; i++) {
                     // todo move the following lines to a separate function
-                    console.log(firstResponse[i].culmination.utc_datetime);
+                    if (MAIN_DEBUG)
+                        console.log(firstResponse[i].culmination.utc_datetime);
                     $("#satellite-api-answer").append("Rise: " + firstResponse[i].rise.utc_datetime); 
                     $("#satellite-api-answer").append("<br>");
                     $("#satellite-api-answer").append("Culmination: " + firstResponse[i].culmination.utc_datetime); 
@@ -142,11 +145,13 @@ $(document).ready(function(){
                 setTime = setTime.split(".")[0];
                 setTime = setTime.split(/[- :]/);
                 endPassMsec = new Date(setTime[0], setTime[1]-1, setTime[2], setTime[3], setTime[4], setTime[5]);
-                console.log(riseTime);
-                console.log(setTime);
-                console.log(startPassMsec);
-                console.log(endPassMsec);
-                // activate the countdown timer
+                if (MAIN_DEBUG) {
+                    console.log(riseTime);
+                    console.log(setTime);
+                    console.log(startPassMsec);
+                    console.log(endPassMsec);
+                }
+                    // activate the countdown timer
                 mainTimer = go($("#satellite-id").val(), startPassMsec, endPassMsec);
 
             },
@@ -158,7 +163,8 @@ $(document).ready(function(){
                         `<h2>Invalid request. Check your input data.</h2>`); 
                 } else { 
                     // Catch other errors
-                    console.log(errorResponse);
+                    if (MAIN_DEBUG)
+                        console.log(errorResponse);
                     $("#satellite-api-status").html(
                         `<h2>Error: ${errorResponse.statusText} ${errorResponse.status}. Check your input data.</h2>`); 
                 }

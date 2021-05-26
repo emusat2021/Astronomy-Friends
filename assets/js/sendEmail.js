@@ -6,10 +6,12 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            console.log("SUCCESS", response);
+            if (MAIN_DEBUG)
+                console.log("SUCCESS", response);
         },
         function(error) {
-            console.log("FAILED", error);
+            if (MAIN_DEBUG)
+                console.log("FAILED", error);
         }
     );
     return false;  // To block from loading a new page

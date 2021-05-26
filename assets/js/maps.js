@@ -32,7 +32,8 @@ function addMarker (location, map) {
         mainPosition.setPosition(location);
     }
     
-    console.log(location.toJSON());
+    if (MAIN_DEBUG)
+        console.log(location.toJSON());
     // add lat and Lng to the input boxes:(id=satellite-lat and id=satellite-lon)
     $("#satellite-lat").val(location.toJSON()["lat"]);
     $("#satellite-lon").val(location.toJSON()["lng"])
@@ -78,11 +79,13 @@ function getLocation() {
         $("#satellite-lat").val(lat);
         $("#satellite-lon").val(lng);
     
-        console.log("Got coordinates " + lat + ", " + lng);
+        if (MAIN_DEBUG)
+            console.log("Got coordinates " + lat + ", " + lng);
     }
     function error() {
         $("#satellite-api-status").html(`<h2>Location access must be allowed!</h2>`);
-        console.log("Error on location");
+        if (MAIN_DEBUG)
+            console.log("Error on location");
     }
 
     if (navigator.geolocation) {
