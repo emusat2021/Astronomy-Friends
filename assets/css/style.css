@@ -5,6 +5,23 @@
   padding: 0;
   border: 0; 
  }
+ /* https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+ body {
+  background-color: rgb(245, 245, 245); 
+  font-family: 'Open Sans', sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 100px;
+}
 /* separator div to make a clear demarcation between sections */
  .separator {
   height: 50px;
