@@ -4,6 +4,11 @@
   padding: 0;
   border: 0; 
  }
+ /* h1 style */
+ .heading1 {
+  text-align: center;
+ }
+
 /*--------------------------------------------Map*/
 div#map {
     min-height: 360px;
