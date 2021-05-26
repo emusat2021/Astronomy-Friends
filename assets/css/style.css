@@ -1,3 +1,9 @@
+/* General Settings */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0; 
+ }
 /*--------------------------------------------Map*/
 div#map {
     min-height: 360px;
@@ -7,6 +13,8 @@ div#map {
 * { box-sizing: border-box; }
 body {
   font: 16px Arial;
+  background-color: #00254d;
+  color: #f1f1f1;
 }
 .autocomplete {
   /*the container must be positioned relative:*/
