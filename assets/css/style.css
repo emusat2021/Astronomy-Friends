@@ -15,17 +15,14 @@ body {
 }
 input {
   border: 1px solid transparent;
-  background-color: #f1f1f1;
+  background-color: #003166;
   padding: 10px;
   font-size: 16px;
 }
 input[type=text] {
-  background-color: #f1f1f1;
-  width: 100%;
-}
-input[type=submit] {
-  background-color: DodgerBlue;
-  color: #fff;
+  background-color: #003166;
+  color: #f1f1f1;
+  /* width: 100%; */
 }
 .autocomplete-items {
   position: absolute;
@@ -80,6 +77,15 @@ ul#favobjects li:hover {
   background-color: #256d91;
   width: 20rem;
 }
+/* Form1 style */
+.input-form1 {
+  width: 300px;
+}
+.form-buttons {
+  background-color: #004a99;
+  color: #fff;
+}
+
 /*Back to top button. Idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css*/
 .btt-button {
   position: fixed;

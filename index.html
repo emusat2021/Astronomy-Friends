@@ -72,29 +72,37 @@
                 <li id="48274">Tianhe<a href="https://en.wikipedia.org/wiki/Tianhe_(space_station_module)" class="mw-redirect" title="Tianhe (space station module)"> (read more)</a></li>
             </ul>
         </div>
-        <div class="satellite-id">
-            Satellite-id
-            <br>
-            <!-- <input type="text" class="satellite-number" id="satellite-id" placeholder="Norad ID" required> -->
-            <!-- https://www.w3schools.com/howto/howto_js_autocomplete.asp -->
-
+        <div>
             <form autocomplete="off" id="form1">
-                <div class="autocomplete" style="width:300px;">
-                    <input type="text" name="satellite_id" class="satellite-number" id="satellite-id" placeholder="Satellite name or Norad ID" required>
+            <!-- https://www.w3schools.com/howto/howto_js_autocomplete.asp -->
+                <div class="row mb-3">
+                    <label for="satellite-id" class="col-sm-2 col-form-label">Name/ID</label>
+                    <div class="col-sm-10">
+                        <div class="autocomplete" style="width:300px;">
+                            <input type="text" name="satellite_id" class="form-control input-form1" id="satellite-id" placeholder="Satellite name or Norad ID" required>
+                        </div>
+                    </div>
                 </div>
-            <br>
-            <input type="text" class="satellite-number" id="satellite-lat" placeholder="Latitude" value="0" required>
-            <br>
-            <input type="text" class="satellite-number" id="satellite-lon" placeholder="Longitude" value="0" required>
-            <br>
+                <div class="row mb-3">
+                    <label for="satellite-lat" class="col-sm-2 col-form-label">Latitude</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control input-form1" id="satellite-lat" placeholder="Latitude" value="0" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="satellite-lon" class="col-sm-2 col-form-label">Longitude</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control input-form1" id="satellite-lon" placeholder="Longitude" value="0" required>
+                    </div>
+                </div>
             <span>
-            <button type="submit" class="btn btn-blue-secondary" id="button-view">
+            <button type="submit" class="btn form-buttons" id="button-view">
                 View
             </button>
-            <button type="reset" class="btn btn-blue-secondary" id="button-reset">
+            <button type="reset" class="btn form-buttons" id="button-reset">
                 Reset
             </button>
-            <button type="button" class="btn btn-blue-secondary" id="button-get-location">
+            <button type="button" class="btn form-buttons" id="button-get-location">
                 Get my location
             </button>
             </span>
