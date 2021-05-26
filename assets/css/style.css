@@ -4,6 +4,11 @@
   padding: 0;
   border: 0; 
  }
+/* separator div to make a clear demarcation between sections */
+ .separator {
+  height: 50px;
+ }
+
  /* h1 style */
  .heading1 {
   text-align: center;
