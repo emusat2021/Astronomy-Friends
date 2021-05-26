@@ -152,3 +152,41 @@ ul#favobjects li:hover {
   background-size: cover;
   height: 75vh;
 }
+/* Footer code taken from https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/blob/master/09-adding-footer-content/index.html */
+/* https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css */
+footer {
+  color: #fafafa;
+  min-height: 120px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.social-links {
+  padding-bottom: 15px;
+}
+
+.social-links li a i {
+  width: 32px;
+  height: 32px;
+  padding: 12px 0;
+  border-radius: 50%;
+  font-size: 17px;
+  line-height: 7px;
+  text-align: center;
+  color: #fafafa;
+  background: #f5ecec;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+  background: #fafafa;
+}
+
+#footer-details {
+  padding: 20px;
+}
+
