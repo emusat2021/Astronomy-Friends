@@ -17,9 +17,11 @@ function autocomplete(inp, arr) {
         /*append the DIV element as a child of the autocomplete container:*/
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
+        cnt = 0;
         for (i = 0; i < arr.length; i++) {
-          /*check if the item starts with the same letters as the text field value:*/
+          /*check if the item includes the same letters as the text field value:*/
           if (arr[i].toUpperCase().includes(val.toUpperCase())) {
+            cnt = cnt + 1;
             /*create a DIV element for each matching element:*/
             b = document.createElement("DIV");
             b.innerHTML = arr[i]
@@ -33,7 +35,10 @@ function autocomplete(inp, arr) {
                 (or any other open lists of autocompleted values:*/
                 closeAllLists();
             });
-            a.appendChild(b);
+            // limit suggestions to 30 elements
+            if (cnt <= 30) {
+                a.appendChild(b);
+            }
           }
         }
     });
