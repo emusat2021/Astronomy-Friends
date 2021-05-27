@@ -114,8 +114,9 @@ the site is constructed using a single page HTML with sections. The following se
 
 ### Languages Used
 
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [Javascript](https://en.wikipedia.org/wiki/Javascript)
 
 ### Frameworks, Libraries & Programs Used
 
@@ -133,8 +134,8 @@ the site is constructed using a single page HTML with sections. The following se
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
+1. [IrfanView:](https://www.irfanview.com/)
+    - IrfanView was used to resize images, logo and edit photos for the website.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 
