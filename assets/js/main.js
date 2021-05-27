@@ -30,6 +30,23 @@ $(document).ready(function(){
         getLocation();
     });
 
+    // Update the text on the button to "Read less", when the paragraph is toggled
+    $(".btn-readmore").click(function() {
+        $(this).text(function(i, v){
+            if (v == "Read more") {
+                newValue = "Read less";
+            }
+            if (v == "Read less") {
+                newValue = "Read more";
+            }
+            if (MAIN_DEBUG) {
+                console.log("Current value " + v);
+                console.log("New value " + newValue);
+            }
+            return newValue
+         })
+    });
+
     /*
     Click event listener for button # button-view
     action is composed of the following steps: 
