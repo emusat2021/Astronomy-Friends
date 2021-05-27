@@ -18,9 +18,6 @@ The webpage has a Beginner's Guide as well as Satellites Tracker section which c
 This webpage gives the opportunity to contact **Astronomy Friends** by providing a form to send feedback or posible suggestions/ideas.
 
 
-
-See **Astronomy Friends** offical website <a href="https://emusat2021.github.io/Astronomy-Friends target="_blank">here</a>
-
 ## Table of Contents
 
 
