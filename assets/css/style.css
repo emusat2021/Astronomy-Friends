@@ -149,6 +149,12 @@ ul#favobjects li:hover {
   color: #fff;
 }
 
+/* form2 style */
+.form-control {
+  background-color: #003166;
+  color: #f1f1f1;
+}
+
 /*Back to top button. Idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css*/
 .btt-button {
   position: fixed;
