@@ -54,7 +54,7 @@ $(document).ready(function(){
             // check if the respective Number object is an integer
             // if it is not then display an error message
             if (! Number.isInteger(Number(noradId))) {
-                $("#satellite-api-status").html(`<h2>Please enter a valid ID</h2>`);
+                $("#satellite-api-status").html(`<h2>Please enter a valid ID between 1 and 99999</h2>`);
                 return;
             }
         }
@@ -62,17 +62,21 @@ $(document).ready(function(){
         else {
             noradId = extractedNoradId[1]
         }
-        
-        // variable for latitude
+        // validate noradId to be a number between 1 and 99999
+        if (noradId < 1 || noradId > 99999) {
+            $("#satellite-api-status").html(`<h2>Please enter a valid ID between 1 and 99999</h2>`);
+            return;
+        }
+    // variable for latitude
         var lat = $("#satellite-lat").val();
-        if (!lat) {
-            $("#satellite-api-status").html(`<h2>Please enter a valid latitude</h2>`);
+        if (!lat || Number(lat) < -90 || Number(lat) > 90) {
+            $("#satellite-api-status").html(`<h2>Please enter a valid latitude between -90 and 90.</h2>`);
             return;
         }
         //  variable for longitude
         var lon = $("#satellite-lon").val();
-        if (!lon) {
-            $("#satellite-api-status").html(`<h2>Please enter a valid longitude</h2>`);
+        if (!lon || Number(lon) < -180 || Number(lon) > 180) {
+            $("#satellite-api-status").html(`<h2>Please enter a valid longitude between -180 and 180.</h2>`);
             return;
         }
 
