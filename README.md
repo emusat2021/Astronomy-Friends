@@ -72,10 +72,44 @@ This webpage gives the opportunity to contact **Astronomy Friends** by providing
 
 ## Features
 
--   Responsive on all device sizes
+#### Navbar
+- Navbar at the top - helping user to easily navigate to diferent sections.
+#### Back to the top
+- Back to the top button/arrow visible on the right bottom-side of the page.
+#### Collapsed divs
+- In the *Beginner's guide* section there are three collapsed divs with a *Read more* button. When the user presses the *Read more* button, the div expands, presenting some information about the specific subject. Also, with the help of Javascript, the text on the button changes to *Read less*. When the user presses the *Read Less* button, the divs collapses back and hides the information.
+#### Images
+Images about Astronomy which bring more ease to understand the presented subject.
+#### APIs
+There are multiple APIs used in this website:
+- <a href="https://satellites.fly.dev/" target="_blank">Satellite Passes API</a> (used to predict when a satellite will pass above a specific location)
+- <a href="https://www.emailjs.com/" target="_blank">EmailJS</a> (used to send feedback via email)
+- <a href="https://developers.google.com/maps/documentation" target="_blank">Google Maps</a> (used to choose a specific location on the map)
+#### Google Maps
+The website uses Google Maps to facilitate the user in choosing a location in order to observe an object.
+#### Forms
+- The first form used in the page is located in the *Satellites Tracker* section. The form is used to gather necessary data in order to identify and locate an object in orbit. It has three input boxes: Name/ID, Latitude, Longitude as well as three buttons: View, Reset, Get my location. View is used to submit the form, Reset is used to reset the form while Get my location is used to draw a Marker on the map at the location of the user.
+- The second form is located in the *Contact* section and it is used to get feddback from the user. There is an EmailJS API attached to the form which makes possible to send a user's message to the owner of the site.
+#### Favorite Objects
+In the *Satellites Tracker* section there is a list with three favorite objects: the International Space Station (ISS), Hubble Space Telescope (HST), Tianhe. When the user clicks on a favorite object, the name of the respective object is automatically copied in the Name-ID input textbox.
+#### Database with objects
+Using a file located <a href="https://tle.info/data/ALL_TLE.ZIP">here</a> it was possible to extract a list with tens of thousands of object names with their corresponding Norad ID. The list is in the ```data.js``` file.
+#### Autocomplete list
+In order to ease the search for a specific object an autocomplete list was implemented using code located <a href="https://www.w3schools.com/howto/howto_js_autocomplete.asp">here</a>. When the user starts typing in the Name/ID input box, the autocomplete script suggests a list of maximum 30 names from the database.
+#### Favicon 
+- A favorite icon has been implemented so that a user can recognize the logo on the browser tab.
+#### Footer
+The footer is styled using Bootstrap. It contains links to social media as well as a disclaimer and a copyright note.
+#### Single page HTML
+the site is constructed using a single page HTML with sections. The following sections are available:
+- About
+- Beginner's guide
+- Satellites Tracker
+- Contact
 
--   Interactive elements
-
+### Features Left to Implement
+* Add more information about Astronomy, tools used
+* Use cookies to improve user experience (chosen objects can be saved in cookies and shown as history)
 ## Technologies Used
 
 ### Languages Used
