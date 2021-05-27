@@ -39,6 +39,11 @@ html {
  }
 .about-image-people {
   width: 60%;
+  border:0px solid #fff;
+  box-shadow: 5px 5px 5px #101010;
+  -moz-box-shadow: 5px 5px 5px #101010;
+  -webkit-box-shadow: 5px 5px 5px #101010;
+  -khtml-box-shadow: 5px 5px 5px #101010;
 }
 .title-card {
   padding-bottom: 5px;
