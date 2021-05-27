@@ -40,6 +40,9 @@ html {
 .about-image-people {
   width: 60%;
 }
+.title-card {
+  padding-bottom: 5px;
+}
 /*--------------------------------------------Map*/
 div#map {
     min-height: 360px;
