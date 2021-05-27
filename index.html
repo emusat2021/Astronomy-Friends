@@ -179,24 +179,32 @@
         <div>
             <form autocomplete="off" id="form1">
             <!-- https://www.w3schools.com/howto/howto_js_autocomplete.asp -->
-                <div class="container">
+            <!-- ml-0 is margin-left 0 -->    
+            <div class="container ml-0">
+                    <!-- mb-3 is for margin-bottom -->
                     <div class="row mb-3">
-                        <label for="satellite-id" class="col-sm-2 col-form-label">Name/ID</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-1">
+                            <label for="satellite-id" class="col-form-label">Name/ID</label>
+                        </div>
+                        <div class="col-sm-6">
                             <div class="autocomplete" style="width:300px;">
                                 <input type="text" name="satellite_id" class="form-control input-form1" id="satellite-id" placeholder="Satellite name or Norad ID" required>
                             </div>
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="satellite-lat" class="col-sm-2 col-form-label">Latitude</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-1">
+                            <label for="satellite-lat" class="col-form-label">Latitude</label>
+                        </div>
+                        <div class="col-sm-6">
                             <input type="text" class="form-control input-form1" id="satellite-lat" placeholder="Latitude" value="0" required>
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="satellite-lon" class="col-sm-2 col-form-label">Longitude</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-1">
+                            <label for="satellite-lon" class="col-form-label">Longitude</label>
+                        </div>
+                        <div class="col-sm-6">
                             <input type="text" class="form-control input-form1" id="satellite-lon" placeholder="Longitude" value="0" required>
                         </div>
                     </div>
