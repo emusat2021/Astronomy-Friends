@@ -107,6 +107,9 @@ ul#favobjects li:hover {
   cursor: pointer;
   color: sandybrown;
 }
+#satellite-api-status {
+  color: sandybrown;
+}
 /* images */
 
 /* navbar */
