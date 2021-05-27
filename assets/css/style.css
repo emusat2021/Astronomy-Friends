@@ -22,6 +22,9 @@ html {
   background-attachment: fixed;
   margin-bottom: 100px;
 }
+.primary-bg-color {
+  background-color: #00254d;
+}
 /* separator div to make a clear demarcation between sections */
  .separator {
   height: 50px;
@@ -37,6 +40,10 @@ html {
    margin-left: 2px;
    margin-right: 2px;
  }
+.text-about {
+  width: 85%;
+}
+
 .about-image-people {
   width: 60%;
   border:0px solid #fff;
