@@ -1,47 +1,77 @@
-<h1 align="center">Code Institute Website</h1>
+<h1 align="center">Astronomy Friends</h1>
 
-[View the live project here.](https://codeinstitute.net)
+The live website of **Astronomy Friends** can be viewed <a href="https://emusat2021.github.io/Astronomy-Friends" target="_blank">here</a>
 
-This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
+![](assets/images/responsivedesign.jpg)
 
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
+2nd Milestone project: Interactive Front-end Development - <a href="https://codeinstitute.net/" target="_blank">Code Institute</a> assignment project.
+
+**Astronomy Friends** is an non profit organisation who aims at bringing people in the world of astronomy.
+
+**Astronomy Friends** purpose is to incurage peple to to dive in in the wonderful world of astronomy?
+
+The webpage can be used to help people discover when a specific object will pass the skies.<br>
+                        
+ 
+The webpage has a Beginner's Guide as well as Satellites Tracker section which can be used to know in advance when a specific object will pass above a location.
+
+This webpage gives the opportunity to contact **Astronomy Friends** by providing a form to send feedback or posible suggestions/ideas.
+
+
+
+See **Astronomy Friends** offical website <a href="https://emusat2021.github.io/Astronomy-Friends target="_blank">here</a>
+
+## Table of Contents
+
+
 
 ## User Experience (UX)
 
--   ### User stories
+- ### User stories
 
-    -   #### First Time Visitor Goals
+  - #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+    As a... | I want to... | To be able to...
+    ---------|--------------|--------------
+    First Time Visitor | easily obtain basic information about astronomy | learn more about this field
+    First Time Visitor | get recommendations about what tools I can use | make a good choice when buying a telescope
+    First Time Visitor | easily find the links to their social media accounts | be able to read more about Astronomy Friends
+    First Time Visitor | easily navigate the website | quickly find what I'm looking for
+    <br>
 
-    -   #### Returning Visitor Goals
+  - #### Returning Visitor Goals
+    <br>
 
-        1. As a Returning Visitor, I want to find information about coding challenges.
-        2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to find community links.
+    As a... | I want to... | To be able to...
+    ---------|--------------|--------------
+    Returning Visitor | obtain information about a specific celestial object in orbit | know if/when the object is visible
+    Returning Visitor | choose a location on a map | know when I will be able to see the object in my location
+    Returning Visitor | find the best way to get in contact with the organisation | get answers to any questions I may have
+    Returning Visitor | see how much time is left until a specific object passes above my location | prepare myself for my observation
+    <br>
+  -  #### Frequent User Goals
 
-    -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
-        2. As a Frequent User, I want to check to see if there are any new blog posts.
-        3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
+        As a... | I want to... | To be able to...
+        ---------|--------------|--------------
+        Frequent User | give a specific object id myself | know if/when the object is visible
+        Frequent User | easily find an object ID giving the name | know if/when the object is visible
+        Frequent User | send further advice  | be able to contact Astronomy Friends 
+        Frequent User |  access the website from any device | use the website anytime and anywhere
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are Code Insititue red, and white.
+        -   The two main colours used are blue and white.
     -   #### Typography
-        -   The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+        -   The Open Sans font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
     -   #### Imagery
-        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
+        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention.
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://github.com/)
-
-    -   Mobile Wireframe - [View](https://github.com/)
-
-    -   Contact Us Page Wireframe - [View](https://github.com/)
+![Wireframes](assets/images/wireframes/about.jpg)
+![Wireframes](assets/images/wireframes/beginners-guide.jpg)
+![Wireframes](assets/images/wireframes/satellite-tracker.jpg)
+![Wireframes](assets/images/wireframes/contact.jpg)
 
 ## Features
 
@@ -221,6 +251,15 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ## Credits
 
 ### Code
+
+people-telescope.jpg image was taken from https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/10/03/12/telescope.jpg
+
+Paragraph about Astronomy taken from https://en.wikipedia.org/wiki/Astronomy
+Paragraph about Telescope and Binoculars taken from https://cosmicpursuits.com/912/how-to-choose-astronomy-binoculars/#:~:text=As%20a%20rule%20of%20thumb,a%20wider%20field%20of%20view.
+paragraph about favorite objects taken from:
+https://en.wikipedia.org/wiki/International_Space_Station
+https://en.wikipedia.org/wiki/Hubble_Space_Telescope
+https://en.wikipedia.org/wiki/Tianhe_core_module
 
 -   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
 
