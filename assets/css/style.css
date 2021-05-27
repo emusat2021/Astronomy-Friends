@@ -213,3 +213,30 @@ footer {
   padding: 20px;
 }
 
+/* Media Queries */
+/* @media screen and (max-width: 1393px ){ 
+} */
+
+/* @media screen and (max-width: 950px){
+}  */
+
+@media screen and (max-width: 400px){
+  .logo {
+    width: 65%;
+  }
+
+  .about-image-people {
+    width: 250px;
+    height: 187px;
+  }
+    
+  .heading1 {
+    font-size: 2rem;
+  }
+
+  .text-about {
+    width: 100%;
+  }
+  
+}
+/* /Media Queries */
