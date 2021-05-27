@@ -99,9 +99,7 @@ $(document).ready(function(){
 
         $("#satellite-api-status").html(
             // display an animated gif file to let the user know that the data is being accessed. // 
-            `<div id="loader">
-                <img src="assets/css/loader.gif" alt="loading..." />
-            </div>`);
+            `<i class="fas fa-circle-notch fa-spin"></i>`);
 
         /*
         using Satellite Passes API
