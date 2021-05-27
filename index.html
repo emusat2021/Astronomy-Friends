@@ -81,39 +81,46 @@
         <!-- Empty div to make a separation between each section. Th div has a height equal to at least the height of the navbar. -->
         <div class="separator"></div>
         <h1 class="heading1"><i class="fas fa-satellite pr-2"></i>BEGINNER'S GUIDE</h1>
+        <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center shadow p-3">
-                <p class="title-card">About Astronomy</p>
-                <div class="collapse w-100 text-center" id="collapse-card1">
-                    <div class="card card-body bg-transparent">
-                        <p>
-                            <!-- Paragraph taken from https://en.wikipedia.org/wiki/Astronomy -->
-                            Astronomy (from Greek: ἀστρονομία, literally meaning the science that studies the laws of the stars) is a natural science that studies celestial objects and phenomena. It uses mathematics, physics, and chemistry in order to explain their origin and evolution. Objects of interest include planets, moons, stars, nebulae, galaxies, and comets. Relevant phenomena include supernova explosions, gamma ray bursts, quasars, blazars, pulsars, and cosmic microwave background radiation. More generally, astronomy studies everything that originates outside Earth's atmosphere. Cosmology is a branch of astronomy that studies the universe as a whole.  
-                        </p>
-                        More info on <a href="https://en.wikipedia.org/wiki/Astronomy" target="_blank">Wikipedia</a>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center p-3">
+                <div class="shadow">
+                    <p class="title-card">About Astronomy</p>
+                    <div class="collapse w-100 text-center" id="collapse-card1">
+                        <div class="card card-body bg-transparent">
+                            <p>
+                                <!-- Paragraph taken from https://en.wikipedia.org/wiki/Astronomy -->
+                                Astronomy (from Greek: ἀστρονομία, literally meaning the science that studies the laws of the stars) is a natural science that studies celestial objects and phenomena. It uses mathematics, physics, and chemistry in order to explain their origin and evolution. Objects of interest include planets, moons, stars, nebulae, galaxies, and comets. Relevant phenomena include supernova explosions, gamma ray bursts, quasars, blazars, pulsars, and cosmic microwave background radiation. More generally, astronomy studies everything that originates outside Earth's atmosphere. Cosmology is a branch of astronomy that studies the universe as a whole.  
+                            </p>
+                            More info on <a href="https://en.wikipedia.org/wiki/Astronomy" target="_blank">Wikipedia</a>
+                        </div>
                     </div>
+                    <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse-card1" aria-expanded="false" aria-controls="collapse-card1">
+                        Read more
+                    </button>
                 </div>
-                <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse-card1" aria-expanded="false" aria-controls="collapse-card1">
-                    Read more
-                </button>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center shadow p-3">
-                <p class="title-card">Binoculars and Telescopes</p>
-            <div class="collapse w-100 text-center" id="collapse-card2">
-                <div class="card card-body bg-transparent">
-                    <p>
-                        <!-- Paragraph taken from https://cosmicpursuits.com/912/how-to-choose-astronomy-binoculars/#:~:text=As%20a%20rule%20of%20thumb,a%20wider%20field%20of%20view. -->
-                        What separates a $200 pair of binoculars from a $2,000 pair with the same magnification and aperture? The complexity of the AR coatings, the quality of lenses and prisms, and the precision of the lens shape. An expensive pair gives crisp, high-contrast views without distortion right out to the edge of the field. Nice to have, especially for daylight use, but not critical for casual astronomical use.
-                    </p>
-                    More info on <a href="https://cosmicpursuits.com/912/how-to-choose-astronomy-binoculars/#:~:text=As%20a%20rule%20of%20thumb,a%20wider%20field%20of%20view." target="_blank">cosmicpursuits.com</a>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center p-3">
+                <div class="shadow">
+                    <p class="title-card">Binoculars and Telescopes</p>
+                    <div class="collapse w-100 text-center" id="collapse-card2">
+                        <div class="card card-body bg-transparent">
+                            <p>
+                                <!-- Paragraph taken from https://cosmicpursuits.com/912/how-to-choose-astronomy-binoculars/#:~:text=As%20a%20rule%20of%20thumb,a%20wider%20field%20of%20view. -->
+                                What separates a $200 pair of binoculars from a $2,000 pair with the same magnification and aperture? The complexity of the AR coatings, the quality of lenses and prisms, and the precision of the lens shape. An expensive pair gives crisp, high-contrast views without distortion right out to the edge of the field. Nice to have, especially for daylight use, but not critical for casual astronomical use.
+                            </p>
+                            More info on <a href="https://cosmicpursuits.com/912/how-to-choose-astronomy-binoculars/#:~:text=As%20a%20rule%20of%20thumb,a%20wider%20field%20of%20view." target="_blank">cosmicpursuits.com</a>
+                        </div>
+                    </div>
+                    <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse-card2" aria-expanded="false" aria-controls="collapse-card2">
+                        Read more
+                    </button>
                 </div>
             </div>
-            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse-card2" aria-expanded="false" aria-controls="collapse-card2">
-                Read more
-            </button>
-        </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center shadow p-3">
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center p-3">
+                <div class="shadow">
                     <p class="title-card">Favorite objects</p>
                     <div class="collapse w-100 text-center" id="collapse-card3">
                         <div class="card card-body bg-transparent">
@@ -137,6 +144,9 @@
                         Read more
                     </button>
                 </div>
+            </div>
+        </div>    
+        </div>
     </div>
     <!-- /BEGINNER'S GUIDE -->
     <!-- MAP SATELLITES TRACKER -->
