@@ -153,6 +153,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
     No errors were detected.
+-   [Static Code Analysis Tool for JavaScript](https://jshint.com/)
+
+    No errors were detected.
 
 ### Testing User Stories from User Experience (UX) Section
 
