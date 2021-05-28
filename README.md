@@ -241,18 +241,16 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
+    1. As a Returning Visitor, I want to give a specific object id myself to be able to know if/when the object is visible.
+        1. The user gives a valid object id, like 25544 and doesn't click on the object in the suggestions list. It clicks on View and the Satellite Passes API returns a valid response.
+    2. As a Returning Visitor, I want to easily find an object ID by giving the name to be able to know if/when the object is visible.
+        1. The user starts typing an object name in the Name/ID input textbox and the suggestion list appears. The user chooses the desired object name from the list which is then copied to the Name/ID field. It clicks on View and the Satellite Passes API returns a valid response.
+    3. As a Returning Visitor, I want to send further advice to be able to contact Astronomy Friends.
+        1. We did the same tests as in the *As a Returning Visitor, I want to find the best way to get in contact with the organisation to be able to get answers to any questions I may have.* UX
+    4. As a Returning Visitor, I want to access the website from any device to be able to use the website anytime and anywhere.
+        1. The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+        1. The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 
-        1. The user would already be comfortable with the website layout and can easily click the banner message.
-
-    2. As a Frequent User, I want to check to see if there are any new blog posts.
-
-        1. The user would already be comfortable with the website layout and can easily click the blog link
-
-    3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-        1. At the bottom of every page their is a footer which content is consistent throughout all pages.
-        2. To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
-        3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
 
 ### Further Testing
 
