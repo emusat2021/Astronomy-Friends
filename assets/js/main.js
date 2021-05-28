@@ -146,6 +146,17 @@ $(document).ready(function(){
                     $("#satellite-api-answer").append("<br>");
                     $("#satellite-api-answer").append("Set: " + firstResponse[i].set.utc_datetime); 
                     $("#satellite-api-answer").append("<br>");
+                    $("#satellite-api-answer").append("The below values are in the form: rise, culmination, set.");
+                    $("#satellite-api-answer").append("<br>");
+                    $("#satellite-api-answer").append("Altitude: " + firstResponse[i].rise.alt + "&deg;, " + firstResponse[i].culmination.alt + "&deg;, " + firstResponse[i].set.alt, "&deg;");
+                    $("#satellite-api-answer").append("<br>");
+                    $("#satellite-api-answer").append("Azimuth: " + firstResponse[i].rise.az + "&deg;, " + firstResponse[i].culmination.az + "&deg;, " + firstResponse[i].set.az, "&deg;");
+                    $("#satellite-api-answer").append("<br>");
+                    $("#satellite-api-answer").append("Azimuth octant: " + firstResponse[i].rise.az_octant + ", " + firstResponse[i].culmination.az_octant + ", " + firstResponse[i].set.az_octant);
+                    $("#satellite-api-answer").append("<br>");
+                    $("#satellite-api-answer").append("Visible: " + firstResponse[i].visible);
+                    $("#satellite-api-answer").append("<br>");
+                    $("#satellite-api-answer").append("<br>");
                 }
                 // reset the countdown timer if the countdown timer is counting
                 if (mainTimer !== null) {
