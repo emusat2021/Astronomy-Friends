@@ -280,15 +280,14 @@ Idea taken from https://stackoverflow.com/questions/5324178/javascript-date-pars
 
 ### GitHub Pages
 
-The project was deployed to GitHub Pages using the following steps...
+The project can be deployed to GitHub Pages using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+1. Log in to GitHub and locate the <a href="https://github.com/emusat2021/Astronomy-Friends" target="_blank">GitHub Repository</a>
+2. At the top of the Repository, locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until "GitHub Pages" Section is located.
+3. Under "Source", click the dropdown called "None" and select "Master Branch".
+4. The page is automatically refreshed.
+5. Scroll back down through the page to locate the now published site <a href="https://emusat2021.github.io/Astronomy-Friends/" target="_blank">link</a> in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
