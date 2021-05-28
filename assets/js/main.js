@@ -46,12 +46,19 @@ $(document).ready(function(){
             return newValue
          })
     });
-
     /*
-    Click event listener for button # button-view
     action is composed of the following steps: 
     - get #satellite-id value from noradId
     - 
+    */
+    /*
+    Form submit event listener for button # button-view
+    action is composed of the following steps: 
+    - get satellite-id value from #satellite-id field
+    - get latitude from #satellite-lat field
+    - get longitude from #satellite-lon field
+    - call the Satellite Passes API
+    - display errors / results
     */
     $("#form1").submit(function(event) {
         event.preventDefault();
