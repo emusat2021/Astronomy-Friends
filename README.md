@@ -161,22 +161,22 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-        2. The main points are made immediately with the hero image
-        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
 
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
+    1. As a First Time Visitor, I want to easily obtain basic information about astronomy to be able to learn more about this field.
+        1. The *Beginner's guide* section can easily be accessed, either by clicking on the Navbar menu or by scrolling. The section's title is highly visible by using a heading and an icon.
+        2. The *Beginner's guide* section contains images which visually indicate the specific area contained in the respective card.
+        3. In the *Beginner's guide* section, in the *About Astronomy* card, when an user clicks on the *Read more* button, a div is revealed, containing information about the specific topic. The *Read more* text on the button becomes *Read less*, showing that the Javascript code works. When an user clicks on the *Read less* button, the div is concealed. The *Read less* text on the button becomes *Read more*, showing that the Javascript code works.
 
-    3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
+    2. As a First Time Visitor, I want to get recommendations about what tools I can use to be able to make a good choice when buying a telescope.
+        1. In the *Beginner's guide* section, in the *Binoculars and Telescopes* card, when an user clicks on the *Read more* button, a div is revealed, containing information about the specific topic. The *Read more* text on the button becomes *Read less*, showing that the Javascript code works. When an user clicks on the *Read less* button, the div is concealed. The *Read less* text on the button becomes *Read more*, showing that the Javascript code works.
+
+    3. As a First Time Visitor, I want to easily find the links to their social media accounts to be able to be able to read more about Astronomy Friends.
+        1. The links to the social media accounts are located on the footer of the page. By using light icons on dark blue background, the icons can easily be spotted. There are links to Facebook, Twitter, Instagram and Youtube.
+    4. As a First Time Visitor, I want to easily navigate the website to be able to quickly find what I'm looking for.
+        1. In order to accomplish that, the website was designed as a single page HTML. All the sections can easily be accessed through the Navbar menu located on the top of the page.
+
 
 -   #### Returning Visitor Goals
 
