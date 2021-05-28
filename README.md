@@ -390,6 +390,6 @@ The Norad ID is obtained from row 3, 2nd column.
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
-
--   Tutor support at Code Institute for their support.
+- I received inspiration for this project from my mentor <a href="https://www.codeinstitute.net/" target="_blank">[Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/?originalSubdomain=ng) at [Code Institute](https://codeinstitute.net)</a>.
+- My husband Bogdan Musat and son David Musat for their immense support, patience and love!
+- All friends and family that took the time to test this for me.
