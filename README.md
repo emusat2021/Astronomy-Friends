@@ -385,7 +385,8 @@ The Norad ID is obtained from row 3, 2nd column.
 
 ### Media
 
--   All Images were created by the developer.
+- *About* section: people-telescope.jpg image was taken from https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/10/03/12/telescope.jpg
+- Logo image Contact page logomaker.com;
 
 ### Acknowledgements
 
