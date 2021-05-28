@@ -253,10 +253,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 
 ### Further Testing
-
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
--   A large amount of testing was done to ensure that all pages were linking correctly.
+- A feature used when testing is the use of a global variable MAIN_DEBUG in Javascript. If it is true then some debug messages are logged to console. The variable is set to false by default.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
@@ -278,9 +275,6 @@ Solution to this bug:
 Use new Date() object instead of Date.parse().
 Idea taken from https://stackoverflow.com/questions/5324178/javascript-date-parsing-on-iphone.
 
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
 
 ## Deployment
 
