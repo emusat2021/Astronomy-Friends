@@ -215,16 +215,29 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         ![](assets/images/testing/test13-request-successful.jpg)
 
 
-        1. The navigation bar clearly highlights the "Contact Us" Page.
-        2. Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-        3. The footer contains links to the organisations Facebook, Twitter and Instagram page as well as the organization's email.
-        4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-        5. The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
 
-    3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
-        1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
-        2. Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
-        3. If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
+    2. As a Returning Visitor, I want to choose a location on a map to be able to know when I will be able to see the object in my location.
+
+        1. Test with location services not enabled: a colored message is displayed in a div below the form which tells the user that location access must be allowed.
+        ![](assets/images/testing/test14-location-services-not-enabled.jpg)
+        1. Test the click "Get my location" button: a Marker is put on the current location of the user and the coordinates are updated in the input textboxes.
+        ![](assets/images/testing/test15-get-my-location.jpg)
+        1. Test the click "Get my location" button: when there is a Marker present on the map, the position of the Marker is updated, i.e. a new Marker is not created.
+
+    3. As a Returning Visitor, I want to find the best way to get in contact with the organisation to be able to get answers to any questions I may have.
+        1. Test to send the Contact form without Name: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
+        ![](assets/images/testing/test16-contact-no-name.jpg)
+        1. Test to send the Contact form without email address: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
+        ![](assets/images/testing/test17-contact-no-email.jpg)
+        1. Test to send the Contact form with an invalid email address: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
+        ![](assets/images/testing/test18-contact-invalid-email.jpg)
+        1. Test to send the Contact form without without suggestions: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
+        ![](assets/images/testing/test19-contact-no-content.jpg)
+
+    4. As a Returning Visitor, I want to see how much time is left until a specific object passes above my location to be able to prepare myself for my observation.
+        1. Test of the countdown timer when the current time is before the rise time of the object: the count down is shown counting down and the time difference is correct.
+        1. Test of the countdown timer when the current time is after the rise time but before the set time of the object: the webpage displays "<object> is above the horizon now!".
+        1. Test of the countdown timer when the current time is after the set time of the object: the webpage displays "Press View for the next pass of <object>"
 
 -   #### Frequent User Goals
 
