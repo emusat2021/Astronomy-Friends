@@ -47,10 +47,17 @@ $(document).ready(function(){
          })
     });
     /*
+    Button #button-reset event listener
     action is composed of the following steps: 
     - get #satellite-id value from noradId
     - 
     */
+    $("#button-reset").click(function(event) {
+        $("#satellite-api-status").html("");
+        $("#satellite-api-answer").html("");
+        clearInterval(mainTimer);
+        $("#countdown").html("");
+    });
     /*
     Form submit event listener for button # button-view
     action is composed of the following steps: 
