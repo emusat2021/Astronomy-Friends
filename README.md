@@ -331,20 +331,43 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
-people-telescope.jpg image was taken from https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/10/03/12/telescope.jpg
+#### HTML
+- BACK TO TOP BUTTON idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/index.html
+- NAVBAR code taken from Bootstrap 4 (https://getbootstrap.com)
+- Section *contact*:
+  - section and form code taken from https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/blob/master/17-adding-contact-form/index.html
+- Footer:
+  - footer code taken from https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/blob/master/09-adding-footer-content/index.html
+  - disclaimer div code taken from https://irinatu17.github.io/Portishead
+#### CSS
+- BACK TO TOP BUTTON idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css
+- night-sky-container, idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css
+- Footer code taken from: https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/blob/master/09-adding-footer-content/index.html
+- sticky footer taken from: https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css
+- the autocomplete list functionality taken from https://www.w3schools.com/howto/howto_js_autocomplete.asp
+#### Javascript
+##### main.js
+- convert date string to new Date object: idea taken from https://stackoverflow.com/questions/5324178/javascript-date-parsing-on-iphone
+- countdown timer and div: idea taken from https://www.n2yo.com/js/passes.js (countdown) and modified accordingly
+- Back to top button: idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/js/main.js
+##### autocomplete.js
+- the autocomplete list functionality taken from https://www.w3schools.com/howto/howto_js_autocomplete.asp
+##### data.js
+- the list with object IDs taken from https://tle.info/data/ALL_TLE.ZIP and then adjusted accordingly. Limited the number of objects by not importing *TBA - TO BE ASSIGNED* names, *DEB - Debris* names. 
 
-Paragraph about Astronomy taken from https://en.wikipedia.org/wiki/Astronomy
-Paragraph about Telescope and Binoculars taken from https://cosmicpursuits.com/912/how-to-choose-astronomy-binoculars/#:~:text=As%20a%20rule%20of%20thumb,a%20wider%20field%20of%20view.
-paragraph about favorite objects taken from:
-https://en.wikipedia.org/wiki/International_Space_Station
-https://en.wikipedia.org/wiki/Hubble_Space_Telescope
-https://en.wikipedia.org/wiki/Tianhe_core_module
-
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
-
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
-
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+Example of the ```VANGUARD 1``` object with Norad ID ```5```:<br>
+This is how the data looks in the ALL_TLE.TXT file:
+```
+VANGUARD 1
+1     5U 58002B   21138.49553650 -.00000158  00000-0 -17345-3 0  9991
+2     5  34.2461 276.0594 1846634  60.0946 317.0308 10.84835001241747
+```
+This is how the data looks in ```data.js```:
+```
+"VANGUARD 1 [5]"
+```
+The name of the object is obtained from row 1.<br>
+The Norad ID is obtained from row 3, 2nd column.
 
 ### Content
 
