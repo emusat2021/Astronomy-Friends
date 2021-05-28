@@ -143,8 +143,16 @@ the site is constructed using a single page HTML with sections. The following se
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
+    
+    There were two errors in the ```index.html``` file which were corrected. The errors were corrected by adding the missing closing tag.
+    ![](assets/images/testing/errors-html-validator.jpg)
+
+    There were four warnings in the ```index.html``` file which were corrected. The warnings were corrected by removing the type attribute and by adding heading  tags to sections where missing.
+    ![](assets/images/testing/warnings-html-validator.jpg)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+
+    No errors were detected.
 
 ### Testing User Stories from User Experience (UX) Section
 
