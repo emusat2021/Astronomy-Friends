@@ -129,13 +129,17 @@ $(document).ready(function(){
                 $("#satellite-api-answer").html("");
                 if (MAIN_DEBUG)
                     console.log(firstResponse);
+                // if firstResponse array (the response from API) is empty then display an error message
                 if (firstResponse.length == 0) {
                     $("#satellite-api-answer").html("The chosen object does not pass above specified coordinates. Please choose another object or other coordinates.");
+                    // stop the timer
                     clearInterval(mainTimer);
+                    // clear the content of #countdown div
                     $("#countdown").html("");
                     return;
                 }
-
+                // when there is at least an element in the firstResponse array from API then do a for loop
+                // the "limit" parameter from the API request was set to 1 (pass) so there is just one iteration of the for loop
                 for (var i = 0; i < firstResponse.length; i++) {
                     // todo move the following lines to a separate function
                     if (MAIN_DEBUG)
