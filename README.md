@@ -371,9 +371,17 @@ The Norad ID is obtained from row 3, 2nd column.
 
 ### Content
 
--   All content was written by the developer.
+- Section *Beginner's Guide*, *About Astronomy* card, content taken from:
+  - https://en.wikipedia.org/wiki/Astronomy
+  - https://en.wikipedia.org/wiki/Horizontal_coordinate_system
+  - https://en.wikipedia.org/wiki/Satellite_Catalog_Number
+- Section *Beginner's Guide*, *Binoculars and Telescopes* card, content taken from:
+  - https://cosmicpursuits.com/912/how-to-choose-astronomy-binoculars/#:~:text=As%20a%20rule%20of%20thumb,a%20wider%20field%20of%20view.
+- Section *Beginner's Guide*, *Favorite objects* card, content taken from:
+  - https://en.wikipedia.org/wiki/International_Space_Station
+  - https://en.wikipedia.org/wiki/Hubble_Space_Telescope
+  - https://en.wikipedia.org/wiki/Tianhe_core_module
 
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
 
 ### Media
 
