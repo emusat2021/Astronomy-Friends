@@ -275,6 +275,8 @@ Solution to this bug:
 Use new Date() object instead of Date.parse().
 Idea taken from https://stackoverflow.com/questions/5324178/javascript-date-parsing-on-iphone.
 
+- Google Chrome browser disables location services if the protocol is HTTP
+When someone develops the application, if the web server is running HTTP only, then location services are automatically disabled by the browser. The solution is to use a HTTPS server. The gitpod.io environment is running an HTTPS server.
 
 ## Deployment
 
