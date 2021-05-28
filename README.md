@@ -180,12 +180,40 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to find the new programming challenges or hackathons.
+    1. As a Returning Visitor, I want to obtain information about a specific celestial object in orbit to be able to know if/when the object is visible.
+        
+        1. For this requirement, the user can use the form in *Satellites tracker* section. There are explanation in the sub-section *How it works*. More explanations about the terms like *Altitude*, *Azimuth* and *Azimuth octant* are found in the *Beginner's guide* section, under the *About Astronomy* card.
+        1. Test input validators: Name/ID input textbox is empty. The *required* attribute correctly gives feedback to the user that a value is required in that field.
+        ![](assets/images/testing/test01-name-id-empty.jpg)
+        1. Test input validators: Name/ID number < 1. A message is displayed in a div bellow the form which tells the user that the respective field must be filled out.
+        ![](assets/images/testing/test02-name-id-bellow-1.jpg)
+        1. Test input validators: Name/ID number > 99999. A colored message is displayed in a div below the form which tells the user that a valid ID between 1 and 99999 must be entered.
+        ![](assets/images/testing/test03-name-id-above-99999.jpg)
+        1. Test input validators: Name/ID contains a string which does not have ID in parenthesis. A colored message is displayed in a div below the form which tells the user that a valid ID between 1 and 99999 must be entered.
+        ![](assets/images/testing/test04-name-id-id-not-in-string.jpg)
+        1. Test input validators: latitude empty. A message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
+        ![](assets/images/testing/test05-latitude-empty.jpg)
+        1. Test input validators: latitude < -90. A colored message is displayed in a div below the form which tells the user that a valid latitude between -90 and 90 must be entered.
+        ![](assets/images/testing/test06-latitude-bellow--90.jpg)
+        1. Test input validators: latitude > 90. A colored message is displayed in a div below the form which tells the user that a valid latitude between -90 and 90 must be entered.
+        ![](assets/images/testing/test07-latitude-above-90.jpg)
+        1. Test input validators: longitude empty. A message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
+        ![](assets/images/testing/test08-longitude-empty.jpg)
+        1. Test input validators: longitude < -180. A colored message is displayed in a div below the form which tells the user that a valid longitude between -180 and 180 must be entered.
+        ![](assets/images/testing/test09-longitude-bellow--180.jpg)
+        1. Test input validators: longitude > 180. A colored message is displayed in a div below the form which tells the user that a valid longitude between -180 and 180 must be entered.
+        ![](assets/images/testing/test10-longitude-above-180.jpg)
+        1. Test of autocomplete function: objects are found from the database and the limit is 30 objects; when the user clicks on a suggestion, the string is copied in the input box.
+        ![](assets/images/testing/test11-autocomplete.jpg)
+        1. Test of Favorite objects list, the Name with ID is copied to the input box.
+        1. Test of Reset button: when the user clicks on *Reset* button, the form is reset to the initial values, the timer is stopped and the info divs are cleared.
+        1. Test of Satellite Passes API request: an ID which does not exist yet (99999). There is a 400 error from API and a colored message is displayed in a div below the form which tells the user that there was an invalid request.
+        ![](assets/images/testing/test12-id-99999.jpg)
+        1. Test of Satellite Passes API request: request is successful but the object does not pass above specified coordinates.
+        ![](assets/images/testing/test12-object-does-not-pass.jpg)
+        1. Test of Satellite Passes API request: request is successful and the object passes above the skies.
+        ![](assets/images/testing/test13-request-successful.jpg)
 
-        1. These are clearly shown in the banner message.
-        2. They will be directed to a page with another hero image and call to action.
-
-    2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
 
         1. The navigation bar clearly highlights the "Contact Us" Page.
         2. Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
