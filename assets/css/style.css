@@ -182,11 +182,18 @@ a.favobjects:active {
   background-color: #004a99;
   color: #fff;
 }
-
+/* Contact */
+.container-custom {
+  margin-bottom: 150px;
+}
 /* form2 style */
 .form-control {
   background-color: #003166;
   color: #f1f1f1;
+}
+
+.form2-input-size {
+  width: 30rem;
 }
 
 /*Back to top button. Idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css*/
