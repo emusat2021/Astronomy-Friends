@@ -275,7 +275,8 @@
                                 <div class="col-12 d-flex justify-content-center text-center">
                                     <div class="center-form mx-auto">
                                         <form onsubmit="return sendMail(this);">
-                                            <input type="text" name="name" id="fullname" class="form-control my-2 form2-input-size" placeholder="Name" required />
+                                            <!-- name validator idea taken from https://stackoverflow.com/questions/43448868/how-to-validate-name-field-to-avoid-numbers -->
+                                            <input type="text" name="name" id="fullname" pattern="[a-zA-Z][a-zA-Z ]{2,}" class="form-control my-2 form2-input-size" placeholder="Name (use only english characters)" required />
                                             <input type="email" name="emailaddress" id="emailaddress" class="form-control my-2 form2-input-size" placeholder="Email" required />
                                             <textarea rows="5" name="suggestions" id="suggestions" class="form-control my-2 form2-input-size" placeholder="Write your suggestions here" required></textarea>
                                             <div class="form-row text-center">

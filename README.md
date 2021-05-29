@@ -374,6 +374,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - NAVBAR code taken from Bootstrap 4 (https://getbootstrap.com)
 - Section *contact*:
   - section and form code taken from https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/blob/master/17-adding-contact-form/index.html
+  - name validator idea taken from https://stackoverflow.com/questions/43448868/how-to-validate-name-field-to-avoid-numbers
 - Footer:
   - footer code taken from https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/blob/master/09-adding-footer-content/index.html
   - disclaimer div code taken from https://irinatu17.github.io/Portishead
