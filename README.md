@@ -423,9 +423,17 @@ The Norad ID is obtained from row 3, 2nd column.
 
 ### Media
 
+- *night-sky image*: night-sky.jpg image was taken from https://www.google.com/url?sa=i&url=https%3A%2F%2Fpxhere.com%2Fen%2Fphoto%2F1164795&psig=AOvVaw3-YEtCQU-v0TMOJeFzxmh-&ust=1622328500683000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjcrv677fACFQAAAAAdAAAAABAE
+  
 - *About* section: people-telescope.jpg image was taken from https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/10/03/12/telescope.jpg
 - Logo image Contact page logomaker.com;
-
+- *Beginner's Guide* section, *About Astronomy* card, image taken from https://www.amnh.org/explore/ology/astronomy/what-is-astronomy
+- *Beginner's Guide* section, *Binoculars and Telescopes* card, image taken from https://wallpaperscraft.com/download/telescope_city_evening_form_structure_44528/1600x900
+- *Beginner's Guide* section, *Favorite objects* card, image taken from https://www.wired.com/story/facebook-confirms-its-working-on-new-internet-satellite/?page=9
+- *Beginner's Guide* section, *Favorite objects* card, images in content taken from:
+  - https://upload.wikimedia.org/wikipedia/commons/0/04/International_Space_Station_after_undocking_of_STS-132.jpg
+  - https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg
+  - https://upload.wikimedia.org/wikipedia/commons/a/a7/Tianhe_before_launch_02.png
 ### Acknowledgements
 
 - I received inspiration for this project from my mentor <a href="https://www.codeinstitute.net/" target="_blank">[Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/?originalSubdomain=ng) at [Code Institute](https://codeinstitute.net)</a>.
