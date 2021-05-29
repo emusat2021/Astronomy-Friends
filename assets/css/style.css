@@ -113,13 +113,41 @@ input[type=text] {
 /* end https://www.w3schools.com/howto/howto_js_autocomplete.asp */
 
 /* Satellites Tracker */
-ul#favobjects {
-  list-style: none;
 }
-ul#favobjects li:hover {
-  cursor: pointer;
+
+/* Favorite objects list */
+a.favobjects {
+  text-decoration: none;
   color: sandybrown;
+  font-size: 1.5em;
 }
+
+a.favobjects:link {
+  text-decoration: none;
+  color: sandybrown;
+  font-size: 1.5em;
+}
+
+a.favobjects:visited {
+  text-decoration: none;
+  color: sandybrown;
+  font-size: 1.5em;
+}
+
+a.favobjects:hover {
+  text-decoration: none;
+  color: #f08628;
+  font-size: 1.5em;
+}
+
+a.favobjects:active {
+  text-decoration: none;
+  color: #f08628;
+  font-size: 1.5em;
+}
+/* /Favorite objects list */
+
+
 #satellite-api-status {
   color: sandybrown;
 }

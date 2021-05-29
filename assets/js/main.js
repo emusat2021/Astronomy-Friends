@@ -15,7 +15,8 @@ $(document).ready(function(){
     for (let i=0; i<noradIds.length; i++) {
         // Click event listener for ISS, Hubble, tianhe ID #25544, 20580, 48274
         // action is to fill in Input text having ids #satellite-id with 25544, 20580, 48274
-        $(`#${noradIds[i]["id"]}`).click(function() {
+        $(`#${noradIds[i]["id"]}`).click(function(event) {
+            event.preventDefault();
             $("#satellite-id").val(`${noradIds[i]["name"]}`);
         });
     }
