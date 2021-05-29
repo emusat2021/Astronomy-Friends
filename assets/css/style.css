@@ -52,6 +52,10 @@ html {
 .title-card {
   padding-bottom: 5px;
 }
+
+.block-divider {
+  background-color: white;
+}
 /*--------------------------------------------Map*/
 div#map {
     min-height: 360px;
