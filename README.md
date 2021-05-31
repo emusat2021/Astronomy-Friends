@@ -41,6 +41,7 @@ This webpage gives the opportunity to contact **Astronomy Friends** by providing
   - [Languages Used](#languages-used)
   - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 - [Testing](#testing)
+  - [Compatibility and Responsiveness](#compatibility-and-responsiveness)
   - [Testing User Stories from User Experience (UX) Section](#testing-user-stories-from-user-experience-ux-section)
   - [Further Testing](#further-testing)
   - [Known Bugs](#known-bugs)
@@ -198,6 +199,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [Static Code Analysis Tool for JavaScript](https://jshint.com/)
 
     No errors were detected.
+### Compatibility and Responsiveness
+
+This website has been tested during the development across multiple browsers (Chrome, Safari, FireFox, Internet Explorer) and on multiple devices: mobile (iPhone 5, 6, 8, Samsung Galaxy, Sony Xperia), tablets(iPad, iPadPro) and laptops (with HiDPI and MDPI and touch screens), as well as on extra-large screens (1980 x 1080). As well as on Google Chrome's developer tools to see how it looks across all the different device screen sizes to ensure compatibility and responsiveness. I used *Am I Responsive* online tool for checking responsiveness on different devices. The website is displayed properly across different devices.
 
 ### Testing User Stories from User Experience (UX) Section
 
