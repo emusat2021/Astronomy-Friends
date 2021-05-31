@@ -311,7 +311,7 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (max-width: 400px){
+@media screen and (max-width: 480px){
   .night-sky-container {
     display: flex;
     align-items: center;
