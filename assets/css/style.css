@@ -6,6 +6,7 @@
   --favobjects-secondary-color: #f08628;
   --favobjects: 1.5em;
   --favobjects-small: 1.3em;
+  --favobjects-small-320: 1.2em;
 }
 
 *{
@@ -383,6 +384,37 @@ footer {
     box-shadow: 5px 5px 5px #101010;
     margin-top: 5px;
   }
+
+  a.favobjects {
+    text-decoration: none;
+    color: var(--favobjects-color);
+    font-size: var(--favobjects-small-320);
+  }
+
+  a.favobjects:link {
+    text-decoration: none;
+    color: var(--favobjects-color);
+    font-size: var(--favobjects-small-320);
+  }
+
+  a.favobjects:visited {
+    text-decoration: none;
+    color: var(--favobjects-color);
+    font-size: var(--favobjects-small-320);
+  }
+
+  a.favobjects:hover {
+    text-decoration: none;
+    color: var(--favobjects-secondary-color);
+    font-size: var(--favobjects-small-320);
+  }
+
+  a.favobjects:active {
+    text-decoration: none;
+    color: var(--favobjects-secondary-color);
+    font-size: var(--favobjects-small-320);
+  }
+
 }
 
 /* /Media Queries */
