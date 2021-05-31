@@ -385,6 +385,12 @@ footer {
 }
 
 @media (max-width: 320px) {
+  .nav-link, .navbar-brand {
+    color: #fff !important;
+    letter-spacing: 0px;
+    font-size: 1.2rem;
+  }
+
   .about-image-people {
     width: 80%;
     height: 190px;
