@@ -159,13 +159,13 @@ a.favobjects:visited {
 
 a.favobjects:hover {
   text-decoration: none;
-  color: var(favobjects-secondary-color);
+  color: var(--favobjects-secondary-color);
   font-size: var(--favobjects);
 }
 
 a.favobjects:active {
   text-decoration: none;
-  color: var(favobjects-secondary-color);
+  color: var(--favobjects-secondary-color);
   font-size: var(--favobjects);
 }
 /* /Favorite objects list */
@@ -360,13 +360,13 @@ footer {
 
   a.favobjects:hover {
     text-decoration: none;
-    color: var(favobjects-secondary-color);
+    color: var(--favobjects-secondary-color);
     font-size: var(--favobjects-small);
   }
 
   a.favobjects:active {
     text-decoration: none;
-    color: var(favobjects-secondary-color);
+    color: var(--favobjects-secondary-color);
     font-size: var(--favobjects-small);
   }
 }
