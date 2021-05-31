@@ -13,6 +13,7 @@
   padding: 0;
   border: 0; 
  }
+
  /* https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css */
 html {
   position: relative;
@@ -30,24 +31,28 @@ html {
   background-attachment: fixed;
   margin-bottom: 100px;
 }
+
 .primary-bg-color {
   background-color: var(--background-color);
 }
+
 /* separator div to make a clear demarcation between sections */
  .separator {
   height: 50px;
- }
+}
 
  /* h1 style */
  .heading1 {
   text-align: center;
   letter-spacing: 2px;
- }
- /* About and Beginner sections */
- #section-about, #section-beginner {
-   margin-left: 2px;
-   margin-right: 2px;
- }
+}
+
+/* About and Beginner sections */
+#section-about, #section-beginner {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
 .text-about {
   width: 85%;
 }
@@ -57,6 +62,7 @@ html {
   border:0px solid #fff;
   box-shadow: 5px 5px 5px #101010;
 }
+
 .title-card {
   padding-bottom: 5px;
 }
@@ -64,9 +70,10 @@ html {
 .block-divider {
   background-color: white;
 }
-/*--------------------------------------------Map*/
+
+/* Map */
 div#map {
-    min-height: 360px;
+  min-height: 360px;
 }
 
 /* https://www.w3schools.com/howto/howto_js_autocomplete.asp */
@@ -76,22 +83,25 @@ body {
   background-color: var(--background-color);
   color: #f1f1f1;
 }
+
 .autocomplete {
   /*the container must be positioned relative:*/
   position: relative;
   display: inline-block;
 }
+
 input {
   border: 1px solid transparent;
   background-color: #003166;
   padding: 10px;
   font-size: 16px;
 }
+
 input[type=text] {
   background-color: #003166;
   color: #f1f1f1;
-  /* width: 100%; */
 }
+
 .autocomplete-items {
   position: absolute;
   border: 1px solid #d4d4d4;
@@ -103,18 +113,21 @@ input[type=text] {
   left: 0;
   right: 0;
 }
+
 .autocomplete-items div {
   padding: 10px;
   cursor: pointer;
   background-color: #808080;
   border-bottom: 1px solid #d4d4d4;
 }
+
 .autocomplete-items div:hover {
-  /*when hovering an item:*/
+  /* when hovering an item: */
   background-color: #b0b0b0;
 }
+
 .autocomplete-active {
-  /*when navigating through the items using the arrow keys:*/
+  /* when navigating through the items using the arrow keys: */
   background-color: DodgerBlue !important;
   color: #ffffff;
 }
@@ -165,32 +178,41 @@ a.favobjects:active {
 .nav-item a {
   text-transform: uppercase;
 }
+
 .nav-link, .navbar-brand {
   color: #fff !important;
   letter-spacing: 2px;
 }
+
 .navbar-toggler {
   background-color: #fff;
 }
+
 .navbar-custom {
   background-color: rgb(0, 26, 53); 
 }
+
 .dropdown-menu-custom {
   background-color: rgb(0, 26, 53);
   width: 20rem;
 }
+
 /* Form1 style */
 .input-form1 {
   width: 300px;
 }
+
 .form-buttons {
   background-color: #004a99;
   color: #fff;
 }
+
+
 /* Contact */
 .container-custom {
   margin-bottom: 150px;
 }
+
 /* form2 style */
 .form-control {
   background-color: #003166;
@@ -244,6 +266,7 @@ a.favobjects:active {
   background-size: cover;
   height: 75vh;
 }
+
 /* Footer code taken from https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/blob/master/09-adding-footer-content/index.html */
 /* https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css */
 footer {
