@@ -284,10 +284,22 @@ footer {
 
 /* Media Queries */
 @media screen and (max-width: 400px){
+  .night-sky-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: url("../images/night-sky.jpg") no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50vh;
+  }
+
   .logo {
     width: 65%;
   }
-
     
   .heading1 {
     font-size: 2rem;
@@ -295,6 +307,10 @@ footer {
 
   .text-about {
     width: 100%;
+  }
+
+  .input-form1 {
+    width: 200px;
   }
 
   .form2-input-size {
