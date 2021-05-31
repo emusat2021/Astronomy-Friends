@@ -6,6 +6,12 @@ $(document).ready(function(){
     autocomplete(document.getElementById("satellite-id"), satelliteList);
 
     mainTimer = null;
+    
+    // Close Navbar when clicking on menu link
+    // idea taken from https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/
+    $(".navbar-collapse a").click(function() {
+        $(".navbar-collapse").collapse('hide');
+    });
 
     noradIds = [
         {"name": "ISS (ZARYA) [25544]", "id": "25544"},
