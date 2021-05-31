@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /* General Settings */
+:root {
+  --background-color: #00254d;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -23,7 +27,7 @@ html {
   margin-bottom: 100px;
 }
 .primary-bg-color {
-  background-color: #00254d;
+  background-color: var(--background-color);
 }
 /* separator div to make a clear demarcation between sections */
  .separator {
@@ -65,7 +69,7 @@ div#map {
 * { box-sizing: border-box; }
 body {
   font: 16px Arial;
-  background-color: #00254d;
+  background-color: var(--background-color);
   color: #f1f1f1;
 }
 .autocomplete {
