@@ -128,6 +128,10 @@ The website uses Google Maps to facilitate the user in choosing a location in or
 #### Forms
 - The first form used in the page is located in the *Satellites Tracker* section. The form is used to gather necessary data in order to identify and locate an object in orbit. It has three input boxes: Name/ID, Latitude, Longitude as well as three buttons: View, Reset, Get my location. View is used to submit the form, Reset is used to reset the form while Get my location is used to draw a Marker on the map at the location of the user.
 - The second form is located in the *Contact* section and it is used to get feddback from the user. There is an EmailJS API attached to the form which makes possible to send a user's message to the owner of the site.
+- Form2 from Contact section has two modals: id #contactModalSuccess and id #contactModalError.
+  The #contactModalSuccess modal is displayed when the message is send successfully. After the modal is dismissed, the form2 is cleared.
+  The #contactModalError modal is displayed when the message fails to send.
+
 #### Favorite Objects
 In the *Satellites Tracker* section there is a list with three favorite objects: the International Space Station (ISS), Hubble Space Telescope (HST), Tianhe. When the user clicks on a favorite object, the name of the respective object is automatically copied in the Name-ID input textbox.
 #### Database with objects
@@ -271,6 +275,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         ![](assets/images/testing/test18-contact-invalid-email.jpg)
         1. Test to send the Contact form without without suggestions: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
         ![](assets/images/testing/test19-contact-no-content.jpg)
+        1. Test to see if the spinner is shown when clicking on Send.
+        ![](assets/images/testing/test20-form2-submit-spinner.jpg)
+        1. Test visual feedback after the user message is sent.
+        ![](assets/images/testing/test21-form2-submit-feedback-modal.jpg)
+        1. Test that the contact form is cleared after the user dismisses the modal.
 
     4. As a Returning Visitor, I want to see how much time is left until a specific object passes above my location to be able to prepare myself for my observation.
         1. Test of the countdown timer when the current time is before the rise time of the object: the count down is shown counting down and the time difference is correct.
@@ -389,6 +398,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - convert date string to new Date object: idea taken from https://stackoverflow.com/questions/5324178/javascript-date-parsing-on-iphone
 - countdown timer and div: idea taken from https://www.n2yo.com/js/passes.js (countdown) and modified accordingly
 - Back to top button: idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/js/main.js
+- Reset input boxes form2 Contact section when SuccessModal is closed: idea taken from https://stackoverflow.com/questions/14840870/how-to-add-an-event-after-close-the-modal-window/26934034
 ##### autocomplete.js
 - the autocomplete list functionality taken from https://www.w3schools.com/howto/howto_js_autocomplete.asp
 ##### data.js
