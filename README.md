@@ -189,13 +189,17 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
     
     There were two errors in the ```index.html``` file which were corrected. The errors were corrected by adding the missing closing tag.
+    
     ![](assets/images/testing/errors-html-validator.jpg)
 
     There were four warnings in the ```index.html``` file which were corrected. The warnings were corrected by removing the type attribute and by adding heading  tags to sections where missing.
+    
     ![](assets/images/testing/warnings-html-validator.jpg)
+
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
     No errors were detected.
+
 -   [Static Code Analysis Tool for JavaScript](https://jshint.com/)
 
     No errors were detected.
@@ -206,9 +210,6 @@ This website has been tested during the development across multiple browsers (Ch
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
-
-
-
 
     1. As a First Time Visitor, I want to easily obtain basic information about astronomy to be able to learn more about this field.
         1. The *Beginner's guide* section can easily be accessed, either by clicking on the Navbar menu or by scrolling. The section's title is highly visible by using a heading and an icon.
@@ -229,66 +230,116 @@ This website has been tested during the development across multiple browsers (Ch
     1. As a Returning Visitor, I want to obtain information about a specific celestial object in orbit to be able to know if/when the object is visible.
         
         1. For this requirement, the user can use the form in *Satellites tracker* section. There are explanation in the sub-section *How it works*. More explanations about the terms like *Altitude*, *Azimuth* and *Azimuth octant* are found in the *Beginner's guide* section, under the *About Astronomy* card.
+        
         1. Test input validators: Name/ID input textbox is empty. The *required* attribute correctly gives feedback to the user that a value is required in that field.
-        ![](assets/images/testing/test01-name-id-empty.jpg)
+        
+           ![](assets/images/testing/test01-name-id-empty.jpg)
+
         1. Test input validators: Name/ID number < 1. A message is displayed in a div bellow the form which tells the user that the respective field must be filled out.
-        ![](assets/images/testing/test02-name-id-bellow-1.jpg)
+        
+           ![](assets/images/testing/test02-name-id-bellow-1.jpg)
+
         1. Test input validators: Name/ID number > 99999. A colored message is displayed in a div below the form which tells the user that a valid ID between 1 and 99999 must be entered.
-        ![](assets/images/testing/test03-name-id-above-99999.jpg)
+        
+           ![](assets/images/testing/test03-name-id-above-99999.jpg)
+
         1. Test input validators: Name/ID contains a string which does not have ID in parenthesis. A colored message is displayed in a div below the form which tells the user that a valid ID between 1 and 99999 must be entered.
-        ![](assets/images/testing/test04-name-id-id-not-in-string.jpg)
+
+           ![](assets/images/testing/test04-name-id-id-not-in-string.jpg)
+
         1. Test input validators: latitude empty. A message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
-        ![](assets/images/testing/test05-latitude-empty.jpg)
+        
+           ![](assets/images/testing/test05-latitude-empty.jpg)
+
         1. Test input validators: latitude < -90. A colored message is displayed in a div below the form which tells the user that a valid latitude between -90 and 90 must be entered.
-        ![](assets/images/testing/test06-latitude-bellow--90.jpg)
+        
+           ![](assets/images/testing/test06-latitude-bellow--90.jpg)
+
         1. Test input validators: latitude > 90. A colored message is displayed in a div below the form which tells the user that a valid latitude between -90 and 90 must be entered.
-        ![](assets/images/testing/test07-latitude-above-90.jpg)
+        
+           ![](assets/images/testing/test07-latitude-above-90.jpg)
+
         1. Test input validators: longitude empty. A message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
-        ![](assets/images/testing/test08-longitude-empty.jpg)
+
+           ![](assets/images/testing/test08-longitude-empty.jpg)
+
         1. Test input validators: longitude < -180. A colored message is displayed in a div below the form which tells the user that a valid longitude between -180 and 180 must be entered.
-        ![](assets/images/testing/test09-longitude-bellow--180.jpg)
+
+           ![](assets/images/testing/test09-longitude-bellow--180.jpg)
+
         1. Test input validators: longitude > 180. A colored message is displayed in a div below the form which tells the user that a valid longitude between -180 and 180 must be entered.
-        ![](assets/images/testing/test10-longitude-above-180.jpg)
+
+           ![](assets/images/testing/test10-longitude-above-180.jpg)
+
         1. Test of autocomplete function: objects are found from the database and the limit is 30 objects; when the user clicks on a suggestion, the string is copied in the input box.
-        ![](assets/images/testing/test11-autocomplete.jpg)
+
+           ![](assets/images/testing/test11-autocomplete.jpg)
+
         1. Test of Favorite objects list, the Name with ID is copied to the input box.
+
         1. Test of Reset button: when the user clicks on *Reset* button, the form is reset to the initial values, the timer is stopped and the info divs are cleared.
+
         1. Test of Satellite Passes API request: an ID which does not exist yet (99999). There is a 400 error from API and a colored message is displayed in a div below the form which tells the user that there was an invalid request.
-        ![](assets/images/testing/test12-id-99999.jpg)
+
+           ![](assets/images/testing/test12-id-99999.jpg)
+
         1. Test of Satellite Passes API request: request is successful but the object does not pass above specified coordinates.
-        ![](assets/images/testing/test12-object-does-not-pass.jpg)
+
+           ![](assets/images/testing/test12-object-does-not-pass.jpg)
+
         1. Test of Satellite Passes API request: request is successful and the object passes above the skies.
-        ![](assets/images/testing/test13-request-successful.jpg)
+
+           ![](assets/images/testing/test13-request-successful.jpg)
 
 
 
     2. As a Returning Visitor, I want to choose a location on a map to be able to know when I will be able to see the object in my location.
 
         1. Test with location services not enabled: a colored message is displayed in a div below the form which tells the user that location access must be allowed.
-        ![](assets/images/testing/test14-location-services-not-enabled.jpg)
+
+           ![](assets/images/testing/test14-location-services-not-enabled.jpg)
         1. Test the click "Get my location" button: a Marker is put on the current location of the user and the coordinates are updated in the input textboxes.
-        ![](assets/images/testing/test15-get-my-location.jpg)
+
+           ![](assets/images/testing/test15-get-my-location.jpg)
+ 
         1. Test the click "Get my location" button: when there is a Marker present on the map, the position of the Marker is updated, i.e. a new Marker is not created.
 
     3. As a Returning Visitor, I want to find the best way to get in contact with the organisation to be able to get answers to any questions I may have.
+
         1. Test to send the Contact form without Name: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
-        ![](assets/images/testing/test16-contact-no-name.jpg)
+
+           ![](assets/images/testing/test16-contact-no-name.jpg)
+
         1. Test to send the Contact form without email address: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
-        ![](assets/images/testing/test17-contact-no-email.jpg)
+
+           ![](assets/images/testing/test17-contact-no-email.jpg)
+
         1. Test to send the Contact form with an invalid email address: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
-        ![](assets/images/testing/test18-contact-invalid-email.jpg)
+
+           ![](assets/images/testing/test18-contact-invalid-email.jpg)
+
         1. Test to send the Contact form without without suggestions: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
-        ![](assets/images/testing/test19-contact-no-content.jpg)
+
+           ![](assets/images/testing/test19-contact-no-content.jpg)
+
         1. Test to see if the spinner is shown when clicking on Send.
-        ![](assets/images/testing/test20-form2-submit-spinner.jpg)
+
+           ![](assets/images/testing/test20-form2-submit-spinner.jpg)
+
         1. Test visual feedback after the user message is sent.
-        ![](assets/images/testing/test21-form2-submit-feedback-modal.jpg)
+
+           ![](assets/images/testing/test21-form2-submit-feedback-modal.jpg)
+
         1. Test that the contact form is cleared after the user dismisses the modal.
 
     4. As a Returning Visitor, I want to see how much time is left until a specific object passes above my location to be able to prepare myself for my observation.
+
         1. Test of the countdown timer when the current time is before the rise time of the object: the count down is shown counting down and the time difference is correct.
+
         1. Test of the countdown timer when the current time is after the rise time but before the set time of the object: the webpage displays "<object> is above the horizon now!".
+
         1. Test of the countdown timer when the current time is after the set time of the object: the webpage displays "Press View for the next pass of <object>"
+
 
 -   #### Frequent User Goals
 
