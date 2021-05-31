@@ -5,6 +5,7 @@
   --favobjects-color: sandybrown;
   --favobjects-secondary-color: #f08628;
   --favobjects: 1.5em;
+  --favobjects-small: 1.3em;
 }
 
 *{
@@ -306,6 +307,36 @@ footer {
     width: 15rem;
   }
   
-  
+  a.favobjects {
+    text-decoration: none;
+    color: var(--favobjects-color);
+    font-size: var(--favobjects-small);
+  }
+
+  a.favobjects:link {
+    text-decoration: none;
+    color: var(--favobjects-color);
+    font-size: var(--favobjects-small);
+  }
+
+  a.favobjects:visited {
+    text-decoration: none;
+    color: var(--favobjects-color);
+    font-size: var(--favobjects-small);
+  }
+
+  a.favobjects:hover {
+    text-decoration: none;
+    color: var(favobjects-secondary-color);
+    font-size: var(--favobjects-small);
+  }
+
+  a.favobjects:active {
+    text-decoration: none;
+    color: var(favobjects-secondary-color);
+    font-size: var(--favobjects-small);
+  }
+}
+
 }
 /* /Media Queries */
