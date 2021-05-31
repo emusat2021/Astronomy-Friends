@@ -297,10 +297,10 @@ This website has been tested during the development across multiple browsers (Ch
 
         1. Test with location services not enabled: a colored message is displayed in a div below the form which tells the user that location access must be allowed.
 
-           ![](assets/images/testing/test14-location-services-not-enabled.jpg)
+            ![](assets/images/testing/test14-location-services-not-enabled.jpg)
         1. Test the click "Get my location" button: a Marker is put on the current location of the user and the coordinates are updated in the input textboxes.
 
-           ![](assets/images/testing/test15-get-my-location.jpg)
+            ![](assets/images/testing/test15-get-my-location.jpg)
  
         1. Test the click "Get my location" button: when there is a Marker present on the map, the position of the Marker is updated, i.e. a new Marker is not created.
 
@@ -308,27 +308,27 @@ This website has been tested during the development across multiple browsers (Ch
 
         1. Test to send the Contact form without Name: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
 
-           ![](assets/images/testing/test16-contact-no-name.jpg)
+            ![](assets/images/testing/test16-contact-no-name.jpg)
 
         1. Test to send the Contact form without email address: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
 
-           ![](assets/images/testing/test17-contact-no-email.jpg)
+            ![](assets/images/testing/test17-contact-no-email.jpg)
 
         1. Test to send the Contact form with an invalid email address: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
 
-           ![](assets/images/testing/test18-contact-invalid-email.jpg)
+            ![](assets/images/testing/test18-contact-invalid-email.jpg)
 
         1. Test to send the Contact form without without suggestions: a message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
 
-           ![](assets/images/testing/test19-contact-no-content.jpg)
+            ![](assets/images/testing/test19-contact-no-content.jpg)
 
         1. Test to see if the spinner is shown when clicking on Send.
 
-           ![](assets/images/testing/test20-form2-submit-spinner.jpg)
+            ![](assets/images/testing/test20-form2-submit-spinner.jpg)
 
         1. Test visual feedback after the user message is sent.
 
-           ![](assets/images/testing/test21-form2-submit-feedback-modal.jpg)
+            ![](assets/images/testing/test21-form2-submit-feedback-modal.jpg)
 
         1. Test that the contact form is cleared after the user dismisses the modal.
 
