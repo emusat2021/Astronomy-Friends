@@ -297,6 +297,11 @@ footer {
   .text-about {
     width: 100%;
   }
+
+  .form2-input-size {
+    width: 15rem;
+  }
+  
   
 }
 /* /Media Queries */
