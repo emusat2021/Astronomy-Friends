@@ -283,12 +283,6 @@ footer {
 }
 
 /* Media Queries */
-/* @media screen and (max-width: 1393px ){ 
-} */
-
-/* @media screen and (max-width: 950px){
-}  */
-
 @media screen and (max-width: 400px){
   .logo {
     width: 65%;
