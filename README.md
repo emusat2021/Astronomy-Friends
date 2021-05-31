@@ -336,9 +336,9 @@ This website has been tested during the development across multiple browsers (Ch
 
         1. Test of the countdown timer when the current time is before the rise time of the object: the count down is shown counting down and the time difference is correct.
 
-        1. Test of the countdown timer when the current time is after the rise time but before the set time of the object: the webpage displays "<object> is above the horizon now!".
+        1. Test of the countdown timer when the current time is after the rise time but before the set time of the object: the webpage displays "&lt;object&gt; is above the horizon now!".
 
-        1. Test of the countdown timer when the current time is after the set time of the object: the webpage displays "Press View for the next pass of <object>"
+        1. Test of the countdown timer when the current time is after the set time of the object: the webpage displays "Press View for the next pass of &lt;object&gt;"
 
 
 -   #### Frequent User Goals
