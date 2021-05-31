@@ -2,6 +2,9 @@
 /* General Settings */
 :root {
   --background-color: #00254d;
+  --favobjects-color: sandybrown;
+  --favobjects-secondary-color: #f08628;
+  --favobjects: 1.5em;
 }
 
 *{
@@ -124,32 +127,32 @@ div#instructions {
 /* Favorite objects list */
 a.favobjects {
   text-decoration: none;
-  color: sandybrown;
-  font-size: 1.5em;
+  color: var(--favobjects-color);
+  font-size: var(--favobjects);
 }
 
 a.favobjects:link {
   text-decoration: none;
-  color: sandybrown;
-  font-size: 1.5em;
+  color: var(--favobjects-color);
+  font-size: var(--favobjects);
 }
 
 a.favobjects:visited {
   text-decoration: none;
-  color: sandybrown;
-  font-size: 1.5em;
+  color: var(--favobjects-color);
+  font-size: var(--favobjects);
 }
 
 a.favobjects:hover {
   text-decoration: none;
-  color: #f08628;
-  font-size: 1.5em;
+  color: var(favobjects-secondary-color);
+  font-size: var(--favobjects);
 }
 
 a.favobjects:active {
   text-decoration: none;
-  color: #f08628;
-  font-size: 1.5em;
+  color: var(favobjects-secondary-color);
+  font-size: var(--favobjects);
 }
 /* /Favorite objects list */
 
@@ -157,9 +160,6 @@ a.favobjects:active {
 #satellite-api-status {
   color: sandybrown;
 }
-/* images */
-
-/* navbar */
 
 .nav-item a {
   text-transform: uppercase;
