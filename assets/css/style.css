@@ -332,5 +332,14 @@ footer {
   }
 }
 
+@media (max-width: 320px) {
+  .about-image-people {
+    width: 80%;
+    height: 190px;
+    border:0px solid #fff;
+    box-shadow: 5px 5px 5px #101010;
+    margin-top: 5px;
+  }
 }
+
 /* /Media Queries */
