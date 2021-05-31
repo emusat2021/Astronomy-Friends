@@ -233,47 +233,47 @@ This website has been tested during the development across multiple browsers (Ch
         
         1. Test input validators: Name/ID input textbox is empty. The *required* attribute correctly gives feedback to the user that a value is required in that field.
         
-           ![](assets/images/testing/test01-name-id-empty.jpg)
+            ![](assets/images/testing/test01-name-id-empty.jpg)
 
         1. Test input validators: Name/ID number < 1. A message is displayed in a div bellow the form which tells the user that the respective field must be filled out.
         
-           ![](assets/images/testing/test02-name-id-bellow-1.jpg)
+            ![](assets/images/testing/test02-name-id-bellow-1.jpg)
 
         1. Test input validators: Name/ID number > 99999. A colored message is displayed in a div below the form which tells the user that a valid ID between 1 and 99999 must be entered.
         
-           ![](assets/images/testing/test03-name-id-above-99999.jpg)
+            ![](assets/images/testing/test03-name-id-above-99999.jpg)
 
         1. Test input validators: Name/ID contains a string which does not have ID in parenthesis. A colored message is displayed in a div below the form which tells the user that a valid ID between 1 and 99999 must be entered.
 
-           ![](assets/images/testing/test04-name-id-id-not-in-string.jpg)
+            ![](assets/images/testing/test04-name-id-id-not-in-string.jpg)
 
         1. Test input validators: latitude empty. A message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
         
-           ![](assets/images/testing/test05-latitude-empty.jpg)
+            ![](assets/images/testing/test05-latitude-empty.jpg)
 
         1. Test input validators: latitude < -90. A colored message is displayed in a div below the form which tells the user that a valid latitude between -90 and 90 must be entered.
         
-           ![](assets/images/testing/test06-latitude-bellow--90.jpg)
+            ![](assets/images/testing/test06-latitude-bellow--90.jpg)
 
         1. Test input validators: latitude > 90. A colored message is displayed in a div below the form which tells the user that a valid latitude between -90 and 90 must be entered.
         
-           ![](assets/images/testing/test07-latitude-above-90.jpg)
+            ![](assets/images/testing/test07-latitude-above-90.jpg)
 
         1. Test input validators: longitude empty. A message is displayed under the respective input textbox which tells the user that the respective field must be filled out.
 
-           ![](assets/images/testing/test08-longitude-empty.jpg)
+            ![](assets/images/testing/test08-longitude-empty.jpg)
 
         1. Test input validators: longitude < -180. A colored message is displayed in a div below the form which tells the user that a valid longitude between -180 and 180 must be entered.
 
-           ![](assets/images/testing/test09-longitude-bellow--180.jpg)
+            ![](assets/images/testing/test09-longitude-bellow--180.jpg)
 
         1. Test input validators: longitude > 180. A colored message is displayed in a div below the form which tells the user that a valid longitude between -180 and 180 must be entered.
 
-           ![](assets/images/testing/test10-longitude-above-180.jpg)
+            ![](assets/images/testing/test10-longitude-above-180.jpg)
 
         1. Test of autocomplete function: objects are found from the database and the limit is 30 objects; when the user clicks on a suggestion, the string is copied in the input box.
 
-           ![](assets/images/testing/test11-autocomplete.jpg)
+            ![](assets/images/testing/test11-autocomplete.jpg)
 
         1. Test of Favorite objects list, the Name with ID is copied to the input box.
 
@@ -281,15 +281,15 @@ This website has been tested during the development across multiple browsers (Ch
 
         1. Test of Satellite Passes API request: an ID which does not exist yet (99999). There is a 400 error from API and a colored message is displayed in a div below the form which tells the user that there was an invalid request.
 
-           ![](assets/images/testing/test12-id-99999.jpg)
+            ![](assets/images/testing/test12-id-99999.jpg)
 
         1. Test of Satellite Passes API request: request is successful but the object does not pass above specified coordinates.
 
-           ![](assets/images/testing/test12-object-does-not-pass.jpg)
+            ![](assets/images/testing/test12-object-does-not-pass.jpg)
 
         1. Test of Satellite Passes API request: request is successful and the object passes above the skies.
 
-           ![](assets/images/testing/test13-request-successful.jpg)
+            ![](assets/images/testing/test13-request-successful.jpg)
 
 
 
