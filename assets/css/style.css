@@ -325,6 +325,14 @@ footer {
     height: 50vh;
   }
 
+  .about-image-people {
+    width: auto;
+    height: 290px;
+    border:0px solid #fff;
+    box-shadow: 5px 5px 5px #101010;
+    margin-top: 5px;
+  }
+
   .logo {
     width: 65%;
   }
