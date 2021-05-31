@@ -276,7 +276,13 @@ $(document).ready(function(){
     }, 1000);
     return timer;
     }
-
+    // Reset input boxes form2 Contact section when SuccessModal is closed
+    // idea taken from https://stackoverflow.com/questions/14840870/how-to-add-an-event-after-close-the-modal-window/26934034
+    $('#contactModalSuccess').on('hidden.bs.modal', function (e) {
+        $("#fullname").val("");
+        $("#emailaddress").val("");
+        $("#suggestions").val("");
+    })
     /* Back to Top button */
     // idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/js/main.js
     bttbutton = document.getElementById("back-to-top-btn");

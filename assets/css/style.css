@@ -196,6 +196,14 @@ a.favobjects:active {
   width: 30rem;
 }
 
+.modal-custom {
+  background-color: #004a99;
+}
+
+.modal-close-symbol {
+  color: white;
+}
+
 /*Back to top button. Idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css*/
 .btt-button {
   position: fixed;
