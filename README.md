@@ -201,7 +201,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     No errors were detected.
 ### Compatibility and Responsiveness
 
-This website has been tested during the development across multiple browsers (Chrome, Safari, FireFox, Internet Explorer) and on multiple devices: mobile (iPhone 5, 6, 8, Samsung Galaxy, Sony Xperia), tablets(iPad, iPadPro) and laptops (with HiDPI and MDPI and touch screens), as well as on extra-large screens (1980 x 1080). As well as on Google Chrome's developer tools to see how it looks across all the different device screen sizes to ensure compatibility and responsiveness. I used *Am I Responsive* online tool for checking responsiveness on different devices. The website is displayed properly across different devices.
+This website has been tested during the development across multiple browsers (Chrome, Safari, FireFox, Internet Explorer) and on multiple devices: mobile (iPhone 5, 6, 8, Samsung Galaxy, Sony Xperia), tablets(iPad, iPadPro) and laptops (with HiDPI and MDPI and touch screens), as well as on extra-large screens (1980 x 1080). As well as on Google Chrome's developer tools to see how it looks across all the different device screen sizes to ensure compatibility and responsiveness. The *Am I Responsive* online tool was used for checking responsiveness on different devices. The website is displayed properly across different devices.
 
 ### Testing User Stories from User Experience (UX) Section
 
