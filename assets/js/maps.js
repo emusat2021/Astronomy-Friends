@@ -83,7 +83,7 @@ function getLocation() {
             console.log("Got coordinates " + lat + ", " + lng);
     }
     function error() {
-        $("#satellite-api-status").html(`<h2>Location access must be allowed!</h2>`);
+        $("#satellite-api-status").html(`<h2>Location access must be allowed!</h2><p style="color: white;">Note on iPhone: if you don't receive a pop-up asking you to allow this page to use your current location then you must go to Settings &rarr; Privacy &rarr; Location Services. The Location services must be "ON". Then scroll down to your browser and make sure that the setting is "While Using" instead of "Never".</p>`);
         if (MAIN_DEBUG)
             console.log("Error on location");
     }
